@@ -1,0 +1,5382 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0001",
+        "NAME": "G52/Special Exhibitions B",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G52/Special Exhibitions B",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57977296099995,
+          39.04344857800004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0002",
+        "NAME": "G53/Cubic Gallery",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G53/Cubic Gallery",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58010844499995,
+          39.04352747100006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0003",
+        "NAME": "G55/Toilet Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G55/Toilet Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57997519999998,
+          39.043536559000074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0004",
+        "NAME": "G48/Noguchi Court",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G48/Noguchi Court",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57998880099996,
+          39.04361989300003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0005",
+        "NAME": "G49/Special Exhibitions A",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G49/Special Exhibitions A",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57980014899994,
+          39.043681166000056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0006",
+        "NAME": "G47/ Mod./Contemp. Sculpture Gallery",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G47/ Mod./Contemp. Sculpture Gallery",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58012627599999,
+          39.04385943600005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0007",
+        "NAME": "G44/African Art A",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G44/African Art A",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57993881699997,
+          39.04403882200006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0008",
+        "NAME": "G45/African Art B",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G45/African Art B",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57993581999995,
+          39.04393937100008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0009",
+        "NAME": "G42/Photography A",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G42/Photography A",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57982062499997,
+          39.04407054200004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0010",
+        "NAME": "G43/Photography B",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G43/Photography B",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57979574699999,
+          39.04391923700007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0011",
+        "NAME": "G46/Gallery Walk",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G46/Gallery Walk",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58006271799997,
+          39.04409380900006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0012",
+        "NAME": "G40",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G40",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58008939399997,
+          39.044163758000025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0013",
+        "NAME": "G41/M/C Gallery F",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G41/M/C Gallery F",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57993399299994,
+          39.04415715500005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0014",
+        "NAME": "G38/M/C Gallery E",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G38/M/C Gallery E",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58003874899998,
+          39.04427812500006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0015",
+        "NAME": "G37/M/C Gallery D",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G37/M/C Gallery D",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57993436499999,
+          39.04429667000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0016",
+        "NAME": "G31/M/C Art D Proj. Gallery",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G31/M/C Art D Proj. Gallery",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58014428799999,
+          39.044321997000054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0017",
+        "NAME": "G33/M/C Gallery B",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G33/M/C Gallery B",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58002971199994,
+          39.044571802000064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0018",
+        "NAME": "G32/M/C Gallery A",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G32/M/C Gallery A",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58007700199994,
+          39.044749413000034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0019",
+        "NAME": "G18",
+        "CATEGORY": "Ticketing",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G18",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Ticketing",
+        "showOnCreation": true,
+        "partialPath": "Tickets",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58009451599997,
+          39.044866650000074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0020",
+        "NAME": "G17/Lower Lobby",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G17/Lower Lobby",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58016232199998,
+          39.044949452000026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0021",
+        "NAME": "G16/Membership",
+        "CATEGORY": "Information",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G16/Membership",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Information",
+        "showOnCreation": true,
+        "partialPath": "Information",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58018388699998,
+          39.045032856000034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0022",
+        "NAME": "G12/Orientation Area",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G12/Orientation Area",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58012733399994,
+          39.04514541000003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0023",
+        "NAME": "G06/Entry Lobby",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G06/Entry Lobby",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58015306599998,
+          39.04546544200008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0024",
+        "NAME": "G54/Elevator Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G54/Elevator Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57992282399994,
+          39.043512306000025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0025",
+        "NAME": null,
+        "CATEGORY": "Entry",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": null,
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Entry",
+        "showOnCreation": true,
+        "partialPath": "Entrance",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58012481299994,
+          39.04381334300007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0026",
+        "NAME": "G35",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G35",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57995646799998,
+          39.04447239000007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0027",
+        "NAME": "G29/Elevator Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G29/Elevator Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58019671699998,
+          39.044398038000054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0028",
+        "NAME": "G27/Elevator Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G27/Elevator Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58015910599994,
+          39.04443852500003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0029",
+        "NAME": "G28/Stair Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G28/Stair Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58019861799994,
+          39.044462450000026
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0030",
+        "NAME": "G36/M/C Gallery C",
+        "CATEGORY": "Exhibit",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G36/M/C Gallery C",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Exhibit",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58002545099998,
+          39.04440381200004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0031",
+        "NAME": "G26/Gallery Walk",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G26/Gallery Walk",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58015626399998,
+          39.04468740200008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0032",
+        "NAME": "G19/Lobby Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G19/Lobby Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58021892099998,
+          39.044788192000055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0033",
+        "NAME": "G09/Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G09/Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58021864099999,
+          39.04529135400003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0034",
+        "NAME": "G01/Lobby Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G01/Lobby Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58021075699997,
+          39.045525128000065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0035",
+        "NAME": "G02/Restroom Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G02/Restroom Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58012430399998,
+          39.04567073900006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0036",
+        "NAME": "G01A/Lobby Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G01A/Lobby Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58026034899996,
+          39.04496827200006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0037",
+        "NAME": "G01B/Lobby Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G01B/Lobby Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58026087899998,
+          39.044936807000056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0038",
+        "NAME": "G01C/Lobby Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G01C/Lobby Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58026370699997,
+          39.044906843000035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0039",
+        "NAME": null,
+        "CATEGORY": "Entry",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": null,
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Entry",
+        "showOnCreation": true,
+        "partialPath": "Entrance",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58020943099996,
+          39.04553618800003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0040",
+        "NAME": null,
+        "CATEGORY": "Entry",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": null,
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Entry",
+        "showOnCreation": true,
+        "partialPath": "Entrance",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58023549899997,
+          39.04479130500005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0041",
+        "NAME": "G58/Lens 4 Vestibule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G58/Lens 4 Vestibule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58013057699998,
+          39.04382509000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0042",
+        "NAME": "227/Lounge",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "227/Lounge",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58018863699994,
+          39.044382932000076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0043",
+        "NAME": "223/Reception",
+        "CATEGORY": "Information",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "223/Reception",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Information",
+        "showOnCreation": true,
+        "partialPath": "Information",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58009281399995,
+          39.044429439000055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0044",
+        "NAME": "224/Garden Dining Room",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "224/Garden Dining Room",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57999342199997,
+          39.04447221400005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0045",
+        "NAME": "200/Landing",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "200/Landing",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58008639699995,
+          39.04518313800003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0046",
+        "NAME": "213/Landing",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "213/Landing",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58015841499997,
+          39.04554417400004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0047",
+        "NAME": "214/Corridor",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "214/Corridor",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58010913299995,
+          39.045566792000045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0048",
+        "NAME": "211/Work Stations",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "211/Work Stations",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58004983399996,
+          39.045527879000076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0049",
+        "NAME": "206/Reading Research Library",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "206/Reading Research Library",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58009139599994,
+          39.04540015400005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0050",
+        "NAME": "209/Circulation Desk",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "209/Circulation Desk",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58008408799998,
+          39.045480335000036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0051",
+        "NAME": "215/Assistant",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "215/Assistant",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58004354399998,
+          39.04559480000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0052",
+        "NAME": "216/Assistant",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "216/Assistant",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58012161099998,
+          39.045604894000064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0053",
+        "NAME": "207/Copy/Computer",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "207/Copy/Computer",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58005410699997,
+          39.045456236000064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0054",
+        "NAME": "212",
+        "CATEGORY": "Seating Area",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "212",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Seating Area",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58018595099998,
+          39.045544482000025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0055",
+        "NAME": "205/Inclined Walk",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "SOURCE": null,
+        "label": "205/Inclined Walk",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58010805099997,
+          39.04533239400007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0056",
+        "NAME": "G106/FLC Class 4",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G106/FLC Class 4",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58035807399995,
+          39.04513881500003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0057",
+        "NAME": "G110/FLC Class 5",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G110/FLC Class 5",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58032862199997,
+          39.04504838500003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0058",
+        "NAME": "G03",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G03",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58041471099995,
+          39.04503118000008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0059",
+        "NAME": "G02/Lobby",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G02/Lobby",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58037144999997,
+          39.04494066800004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0060",
+        "NAME": "G136A/Office",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G136A/Office",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58034719999995,
+          39.04470863900008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0061",
+        "NAME": "G136B/Office",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G136B/Office",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58038694799995,
+          39.04470979600006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0062",
+        "NAME": "G137B/Resource Center",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G137B/Resource Center",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58045834199999,
+          39.044765889000075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0063",
+        "NAME": "G137A/Resource Center",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G137A/Resource Center",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58053569699996,
+          39.04475747500004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0064",
+        "NAME": "G07",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G07",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58042097999999,
+          39.04486037100003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0065",
+        "NAME": "G100",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G100",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58070428099995,
+          39.04509720800007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0066",
+        "NAME": "G133",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G133",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58063251899995,
+          39.044810435000045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0067",
+        "NAME": "G179/Security Vestbule",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G179/Security Vestbule",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58148725399997,
+          39.04518016600008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0068",
+        "NAME": "G244/Stage",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "SOURCE": null,
+        "label": "G244/Stage",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58074716799996,
+          39.04495369400007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0069",
+        "NAME": null,
+        "CATEGORY": "Entry",
+        "LEVEL_ID": "0003",
+        "SOURCE": null,
+        "label": null,
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Entry",
+        "showOnCreation": true,
+        "partialPath": "Entrance",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58094502699998,
+          39.04472485100007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "0070",
+        "NAME": null,
+        "CATEGORY": "Entry",
+        "LEVEL_ID": "0003",
+        "SOURCE": null,
+        "label": null,
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Entry",
+        "showOnCreation": true,
+        "partialPath": "Entrance",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58092555999997,
+          39.04518750500006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0001",
+        "NAME": "European 200 C.E.-1500",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "European 200 C.E.-1500",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581553,
+          39.045167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0002",
+        "NAME": "Egyptian, Green, and Roman",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Egyptian, Green, and Roman",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581301,
+          39.045161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0003",
+        "NAME": "European 1500-1600",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "European 1500-1600",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581542,
+          39.04488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0004",
+        "NAME": "Rozzelle Court Restaurant",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Rozzelle Court Restaurant",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581274,
+          39.04497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0005",
+        "NAME": "English Pottery",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "English Pottery",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581226,
+          39.044789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0006",
+        "NAME": "Kirkwood Hall",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Kirkwood Hall",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580951,
+          39.044968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0007",
+        "NAME": "European 1750-1950",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "European 1750-1950",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580594,
+          39.045078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0008",
+        "NAME": "European 1600-1800",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "European 1600-1800",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58061,
+          39.044809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P0009",
+        "NAME": "Sculpture Hall ",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Sculpture Hall ",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580648,
+          39.044955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00010",
+        "NAME": "Entry",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Entry",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580192,
+          39.04557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00011",
+        "NAME": "Lobby",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Lobby",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580128,
+          39.045476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00012",
+        "NAME": "Nelson Atkins Building",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Nelson Atkins Building",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580978,
+          39.045255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00013",
+        "NAME": "Bloch Building ",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Bloch Building ",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580273,
+          39.045638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00014",
+        "NAME": "Lobby Mezzanine Between Plaza and Level 2",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0003",
+        "label": "Lobby Mezzanine Between Plaza and Level 2",
+        "floorId": "0003",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580168,
+          39.044443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00015",
+        "NAME": "Ford Learning Center ",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Ford Learning Center ",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580573,
+          39.045149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00016",
+        "NAME": "Atkins Auditorium",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Atkins Auditorium",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580606,
+          39.04495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00017",
+        "NAME": "Training Room ",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Training Room ",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580762,
+          39.044767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00018",
+        "NAME": "Education Resource Center",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Education Resource Center",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580515,
+          39.044759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00019",
+        "NAME": "Museum Store",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Museum Store",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580043,
+          39.045407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00020",
+        "NAME": "Info Desk",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Info Desk",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580117,
+          39.044858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00021",
+        "NAME": "Contempoary",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Contempoary",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580055,
+          39.044518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00022",
+        "NAME": "Project Space (Temporary Exhibit)",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Project Space (Temporary Exhibit)",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58006,
+          39.044245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00023",
+        "NAME": "Photography",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Photography",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.579859,
+          39.043985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00024",
+        "NAME": "African",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "African",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.579985,
+          39.043962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00025",
+        "NAME": "Featured Exhibition",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Featured Exhibition",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.579853,
+          39.04365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00026",
+        "NAME": "Noguchi Court",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Noguchi Court",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580033,
+          39.043712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00027",
+        "NAME": "Gallery Walk",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Gallery Walk",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580183,
+          39.04451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00028",
+        "NAME": "Nelson Atkins Building",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Nelson Atkins Building",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580978,
+          39.045255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00029",
+        "NAME": "Bloch Building ",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0002",
+        "label": "Bloch Building ",
+        "floorId": "0002",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580273,
+          39.045638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00030",
+        "NAME": "Japanese",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Japanese",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581551,
+          39.045158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00031",
+        "NAME": "American Indian",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "American Indian",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581554,
+          39.044789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00032",
+        "NAME": "Rozzelle Balcony",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Rozzelle Balcony",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581295,
+          39.045095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00033",
+        "NAME": "Chinese",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Chinese",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.581292,
+          39.045162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00034",
+        "NAME": "Chinese",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Chinese",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580549,
+          39.045029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00035",
+        "NAME": "South Asian",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "South Asian",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580589,
+          39.045152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00036",
+        "NAME": "American",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "American",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580559,
+          39.044796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00037",
+        "NAME": "Spencer Art Reference Library",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Spencer Art Reference Library",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58006,
+          39.045406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00038",
+        "NAME": "Executive Offices",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Executive Offices",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58009,
+          39.045646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00039",
+        "NAME": "Rockhill Room",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Rockhill Room",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580042,
+          39.045056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00040",
+        "NAME": "Lens 2 Event Room",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Lens 2 Event Room",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580012,
+          39.044472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00041",
+        "NAME": "Nelson Atkins Building",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Nelson Atkins Building",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580978,
+          39.045255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "POINT_ID": "P00042",
+        "NAME": "Bloch Building ",
+        "CATEGORY": "Label",
+        "LEVEL_ID": "0004",
+        "label": "Bloch Building ",
+        "floorId": "0004",
+        "buildingId": "0001",
+        "category": "Label",
+        "showOnCreation": true,
+        "type": "Text",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.580273,
+          39.045638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0001",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0001",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0001",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5801228173333,
+          39.04554218666672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0003",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0001",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0001",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5800994163333,
+          39.045601973000046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0004",
+        "CATEGORY": "Restroom (Male)",
+        "LEVEL_ID": "0001",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0001",
+        "category": "Restroom (Male)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Mens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58018683930766,
+          39.04566600538465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0005",
+        "CATEGORY": "Restroom (Female)",
+        "LEVEL_ID": "0001",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0001",
+        "category": "Restroom (Female)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Womens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58017107594735,
+          39.04548823868426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0016",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "2",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5801194624444,
+          39.045543787777824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0018",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G1",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5800947024545,
+          39.04531284609097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0020",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "1",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58009779961534,
+          39.04558752292313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0021",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G2",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58001479988886,
+          39.04481867188895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0022",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G3",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58012407316662,
+          39.04460481166672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0024",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G4",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57991936455551,
+          39.04435756922228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0029",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G6",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58000716199996,
+          39.04410001600006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0030",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G5",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57982886124995,
+          39.04412439175005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0031",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G7",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57991466999997,
+          39.04387180920005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0033",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G8",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57991941966662,
+          39.043707637166705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0034",
+        "CATEGORY": "Restroom (Male)",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G56",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom (Male)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Mens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.57997642141173,
+          39.04352057470593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0035",
+        "CATEGORY": "Restroom (Female)",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G57",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom (Female)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Womens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58000430766663,
+          39.04353412244451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0036",
+        "CATEGORY": "Restroom (Male)",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G04",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom (Male)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Mens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58017405364996,
+          39.045676144350054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0037",
+        "CATEGORY": "Restroom (Female)",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G05",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom (Female)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Womens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58007961005879,
+          39.0456723236471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0039",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "7",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58020601655552,
+          39.04441539755561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0047",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58010399299998,
+          39.045611758000064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0053",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58011926955552,
+          39.04554382244451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0054",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58018193949995,
+          39.045383301400065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0055",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58008826769226,
+          39.045593710307735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0062",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "7",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58020342788885,
+          39.04442384011117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0065",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "5",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58014048714281,
+          39.04442950742863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0067",
+        "CATEGORY": "Restroom (Male)",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "203",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Restroom (Male)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Mens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58003290559996,
+          39.04519820300005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0068",
+        "CATEGORY": "Restroom (Female)",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "204",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Restroom (Female)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Womens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58004174723995,
+          39.04523127008005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0070",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "3",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58014837939997,
+          39.045228160000065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0075",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "2",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58003833699996,
+          39.045571151555606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0076",
+        "CATEGORY": "Restroom",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "222",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Restroom",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58002561899995,
+          39.04562340936369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0077",
+        "CATEGORY": "Restroom",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "219",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Restroom",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5801436953333,
+          39.045623466555604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0078",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "1",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58007907233329,
+          39.04555391211117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0079",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": "2",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58012315588887,
+          39.04554104611116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0092",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58031664363634,
+          39.04488614509096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0094",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58085165788884,
+          39.045073579555606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0100",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58104659999995,
+          39.044841069555595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0101",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58108541344441,
+          39.04485362588893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0110",
+        "CATEGORY": "Restroom (Female)",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G141",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom (Female)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Womens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58095325223073,
+          39.04478193957697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0111",
+        "CATEGORY": "Restroom (Male)",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G143A",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom (Male)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Mens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58102036631998,
+          39.04478859076007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0114",
+        "CATEGORY": "Restroom (Male)",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G09",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom (Male)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Mens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58045521329163,
+          39.04485726637506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0115",
+        "CATEGORY": "Restroom",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G08",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58046005539998,
+          39.04488860093339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0117",
+        "CATEGORY": "Restroom (Female)",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G04",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom (Female)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Womens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58044789028567,
+          39.04503902119053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0118",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58081592830763,
+          39.045075097384675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0119",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58066721874997,
+          39.04505850268756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0120",
+        "CATEGORY": "Restroom",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G231B",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58068187699996,
+          39.04506855725005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0122",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58076066469997,
+          39.045045245900056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0123",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58076822895994,
+          39.04485464328006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0124",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58067899593748,
+          39.04484281293756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0125",
+        "CATEGORY": "Restroom",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G232B",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Restroom",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58069168049995,
+          39.04483230308339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0129",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5808263467692,
+          39.044832146230824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0134",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": "G02A",
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58043730324557,
+          39.04494213196496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0136",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0002",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0002",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58034828588885,
+          39.04495845638895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0140",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5803167704444,
+          39.04500277877783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0150",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5808027118378,
+          39.0450562723514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0151",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58085445322219,
+          39.04507223922228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0153",
+        "CATEGORY": "Restroom (Female)",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Restroom (Female)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Womens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5810593173214,
+          39.04475232578577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0154",
+        "CATEGORY": "Restroom (Male)",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Restroom (Male)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Mens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58083876437496,
+          39.04475168580005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0160",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58108327509999,
+          39.04485449040005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0167",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58049156736361,
+          39.04494542990914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0170",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5808154653636,
+          39.044849878545506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0171",
+        "CATEGORY": "Restroom",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Restroom",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58105642799997,
+          39.044776573285766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0176",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58078569199996,
+          39.04483452500005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0177",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58077971106663,
+          39.04507405386672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0183",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58104649891663,
+          39.044841376583385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0196",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58081455989998,
+          39.044844842100055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0207",
+        "CATEGORY": "Restroom",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Restroom",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58085719366663,
+          39.04478094900005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0208",
+        "CATEGORY": "Restroom (Male)",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Restroom (Male)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Mens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58085546872724,
+          39.04475011409095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0209",
+        "CATEGORY": "Restroom (Female)",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Restroom (Female)",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Restroom Womens",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58079968718746,
+          39.04475837918755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0212",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58104548069996,
+          39.044842854800045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0213",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58109055971426,
+          39.044852122857186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0214",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58080691034998,
+          39.04506479110005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0215",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58085273229996,
+          39.045073072400044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0218",
+        "CATEGORY": "Elevator",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Elevator",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Elevator",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5803331243333,
+          39.0448788085556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0220",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58034632284611,
+          39.04500338038467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0232",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58151935977774,
+          39.04499105444451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0271",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0003",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0003",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58015015579997,
+          39.045235879800046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "UNIT_ID": "0273",
+        "CATEGORY": "Stairs",
+        "LEVEL_ID": "0004",
+        "NAME": null,
+        "SUITE": null,
+        "RESTRICTED": null,
+        "SOURCE": null,
+        "ADDRESS_ID": "0001",
+        "label": null,
+        "floorId": "0004",
+        "category": "Stairs",
+        "showOnCreation": true,
+        "buildingId": "0001",
+        "partialPath": "Stairs",
+        "type": "Icon",
+        "location": "Default",
+        "showToolTip": false,
+        "tooltipTitle": "",
+        "fontSize": 24
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.58018386485709,
+          39.045358968142914
+        ]
+      }
+    }
+  ]
+}

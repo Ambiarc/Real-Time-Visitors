@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>Ambiarc</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" media="all" href="TemplateData/css/bootstrap.min.css" />
+  <link rel="stylesheet" media="all" href="css/demo-ui.css" />
+  <script src="TemplateData/js/jquery-2.2.4.min.js"></script>
+  <script src="TemplateData/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <script src="js/demo-ui.js "></script>
+</head>
+
+<body style="pointer-events: none">
+  <div id="bootstrap" hidden>
+    <div class="container-fluid" style="z-index:100;">
+      <div class="row">
+        <div style="pointer-events: all">
+
+          <div id="levels-dropdown" class="dropdown floor-selector">
+            <button id="#levels-dropdown-button" onclick="dropdownClicked();" class="btn btn-default dropdown-toggle ui-item" type="button" aria-haspopup="true" aria-expanded="true">
+              <p  id="currentFloor">Select Floor</p>
+              <span class="caret"></span>
+            </button>
+            <ul  id="floorContainer" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <li id="floorListTemplate" class="invisible" >
+      <a class="floorName" href="#">First Floor</a>
+    </li>
+  <div id="controls-section" style="pointer-events: all">
+        <ul>
+            <li class="" onclick="zoomInHandler()">
+                <span class="controls-btn ctrl-zoom-in glyphicon glyphicon-plus"  aria-hidden="true"></span>
+            </li>
+            <li class="">
+                <i id="rotate_left" class="material-icons controls-btn ctrl-rotate-left"  onclick="rotateLeft()" aria-hidden="true">rotate_left</i>
+                 <i id="rotate_right" class="material-icons controls-btn ctrl-rotate-right"  onclick="rotateRight()" aria-hidden="true">rotate_right</i>
+            </li>
+            <li class="">
+                <span class=" controls-btn ctrl-zoom-out glyphicon glyphicon-minus" onclick="zoomOutHandler()" aria-hidden="true"></span>
+            </li>
+        </ul>
+    </div>
+  </div>
+  <iframe src="./map.html" id="ambiarcIframe" style="width:100%; height:100%; border:none; top:
+    0; z-index:-1; position:fixed; pointer-events: all;">
+    Your browser doesn't support iframes
+  </iframe>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+ body {
+     padding-top: 20px;
+ }
+
+ .ui-item {
+     margin: 10px;
+     max-width: 200px;
+ }
+
+ .affix-top, .affix {
+     position: static;
+ }
+
+ .bootstrapMenu {
+    pointer-events: all;
+ }
+
+ .poiName {
+    padding: 0px !important;
+ }
+
+ .poiExit {
+     padding: 0px !important;
+ }
+
+ @media (min-width: 992px) {
+     #sidebar.affix-top {
+         position: static;
+         margin-top: 30px;
+         width: 228px;
+     }
+     #sidebar.affix {
+         position: fixed;
+         top: 70px;
+         width: 228px;
+     }
+ }
+.ui-row
+{
+  display: inline-block;
+}
+
+.floor-selector
+{
+  float:left;
+}
+ .poi-container
+ {
+   float:left;
+ }
+ #controls-section {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    right: 20px;
+}
+
+#controls-section ul {
+    list-style: none;
+}
+
+.controls-btn {
+    font-size: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    box-shadow: 0px 2px #A9A9A9;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 100;
+    padding: 4px;
+}
+
+.controls-btn.ctrl-rotate-left {
+    margin-left: -30px;
+}
+
+.controls-btn.ctrl-rotate-right {
+    margin-left: 20px;
+}
+
