@@ -1,0 +1,36 @@
+html {
+
+}
+
+body {
+   height:100vh;
+}
+
+.button-bar
+{
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 600px;
+      text-align: center;
+      width: inherit;
+      display: inline-block;
+}
+
+.button-bar-button
+{
+  min-width: 150px;
+}
+.button-bar-parent
+{
+text-align: center;
+}
+
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: #020000;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
+  color: #fff;
+  background-color: #020000;
+}
