@@ -28,10 +28,19 @@
         <div id="bootstrap" hidden>
             <div class="container-fluid" style="z-index:100;">
                 <div id="status_bar_container">
+
                     <div id="status_bar_content">
-                        <span>Total devices:</span>
-                        <span id="num_devices"></span>
+                        <div id="total_devices" class="col-sm-6">
+                            <span>Total devices:</span>
+                            <span id="tot_num_devices"></span>
+                        </div>
+                        <div id="floor_devices" class="col-sm-6">
+                            <span>Floor Devices:</span>
+                            <span id="floor_num_devices"></span>
+                        </div>
+
                     </div>
+
                     <div class="separate-block row buttons_row">
                         <div class="col-sm floor_select_btn map_view">
                             Map view

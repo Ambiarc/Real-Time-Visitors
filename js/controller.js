@@ -1,12 +1,12 @@
-DEFAULT_INTERVAL_MILLISECONDS = 3000;
+DEFAULT_INTERVAL_MILLISECONDS = 2000;
 DEFAULT_HOST = "http://localhost:8000";
 
-var floorsObject = {
-    first: 'L001',
-    second: 'L002',
-    third: 'L003',
-    cafe: 'L004'
-};
+// var floorsObject = {
+//     first: 'L001',
+//     second: 'L002',
+//     third: 'L003',
+//     cafe: 'L004'
+// };
 
 var ambiarc;
 var directories = {};
@@ -17,29 +17,35 @@ var currentBuildingId, currentFloorId;
 var isFloorSelectorEnabled = false;
 
 
+var updateDevicesNumbers = function(){
+
+    //all devices
+    var devices = angular.element(document.getElementById('notmanCtrl')).scope().devices;
+
+    //devices on selected floor
+    var devicesOnFLoor = 0;
+    $.each(devices, function(i, device){
+
+        if(config.recieverFloors[device.event.receiverDirectory] == currentFloorId){
+            devicesOnFLoor ++;
+        }
+    });
+
+    $('#tot_num_devices').html(devices.length);
+    $('#floor_num_devices').html(devicesOnFLoor);
+};
+
+
 /**
  * Update function "OFFICE AVAILABLITY" mode. Goes through directories and activates them if they have a deviceCount above 0.
  */
 var UpdateDirectories = function() {
 
-    var devices = angular.element(document.getElementById('notmanCtrl')).scope().devices;
-    console.log("all devices locations:");
-    $('#num_devices').html(devices.length);
-
-    $.each(devices, function(a,b){
-        console.log(b.event.receiverDirectory);
-    });
-
-
     var ambiarc = $("#ambiarcIframe")[0].contentWindow.Ambiarc;
     var directoryArray = angular.element(document.getElementById('notmanCtrl')).scope().directories;
 
     $.each(directoryArray, function(i, directory){
-
-        console.log("each...");
-        console.log(directory);
         var dirId = directory.id;
-
         var iconColor = (directory.deviceCount > 0) ? 'dot_green.png' : 'dot_gray.png'
         var img = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")) +'/img/'+iconColor;
 
@@ -48,12 +54,10 @@ var UpdateDirectories = function() {
             // skip to next iteration, device count < 0 and not in array
             if(directory.deviceCount == 0) return true;
 
-            console.log("creating...");
             // CREATE MAP
             directories_state[dirId] = true;
 
-            var floorName = directory.id.split(':')[1];
-            var floorNum = floorsObject[floorName];
+            var floorNum = config.recieverFloors[directory.id];
             var deviceKey = Object.keys(directory.devices)[0];
 
             //sometimes reelyactive sends empty devices property - in that case we're creating label on next periodic update
@@ -93,8 +97,6 @@ var UpdateDirectories = function() {
         }
         else {
 
-            console.log("UPDATING MAP LABEL:");
-            console.log(img);
             // UPDATE MAP
 
             if (directory.deviceCount == 0){
@@ -117,8 +119,7 @@ var UpdateDirectories = function() {
             }
 
             if(latitude && longitude){
-                var floorName = directory.id.split(':')[1];
-                var floorNum = floorsObject[floorName];
+                var floorNum = config.recieverFloors[directory.id];
 
                 var mapLabelInfo = {
                     mapLabelId: directories[dirId],
@@ -198,8 +199,9 @@ var fillBuildingsList = function(){
 /**
  * Periodic updater function, updates device count and the map depending ont the state of the UI
  */
-var PeriodicUpdate = function() {
-  UpdateDirectories();
+var PeriodicUpdate = function () {
+    UpdateDirectories();
+    updateDevicesNumbers();
 };
 
 /**

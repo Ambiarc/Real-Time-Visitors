@@ -1,6 +1,6 @@
 var config = {
 
-    // paretoToken: '<YOUR API KEY>',
+    // paretoToken: '<YOUR API KEY>'
     paretoURL: 'https://pareto.reelyactive.com',
     apiRoot: 'https://pareto.reelyactive.com',
     defaultDirectoryId: 'Unspecified',
@@ -15,6 +15,17 @@ var config = {
             maxSessionDuration: 86400000
         }
     },
+    recieverFloors: {
+        'notman:first:east': 'L001',
+        'notman:first:west': 'L001',
+        'notman:first:centre': 'L001',
+        'notman:second:centre' : 'L002',
+        'notman:second:west' : 'L002',
+        'notman:second:east' : 'L002',
+        'notman:third:west': 'L003',
+        'notman:third:east': 'L003',
+        'notman:cafe' : 'L004'
+    }
 };
 
 DEFAULT_INTERVAL_MILLISECONDS = 3000;
