@@ -1,4 +1,4 @@
-DEFAULT_INTERVAL_MILLISECONDS = 8000;
+DEFAULT_INTERVAL_MILLISECONDS = 1000;
 DEFAULT_HOST = "http://localhost:8000";
 
 var floorsObject = {
@@ -20,6 +20,7 @@ var UpdateDirectories = function() {
 
     var devices = angular.element(document.getElementById('notmanCtrl')).scope().devices;
     console.log("all devices locations:");
+    $('#num_devices').html(devices.length);
 
     $.each(devices, function(a,b){
         console.log(b.event.receiverDirectory);

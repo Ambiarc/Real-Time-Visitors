@@ -79,3 +79,21 @@ body {
 .controls-btn.ctrl-rotate-right {
     margin-left: 20px;
 }
+
+
+/* status bar */
+
+#status_bar_container {
+    text-align: center;
+}
+
+#status_bar_content {
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    color: #2c7dca;
+    max-width: 600px;
+    height: 30px;
+    line-height: 30px;
+    margin: auto;
+    margin-top: 30px;
+}
