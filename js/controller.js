@@ -18,93 +18,123 @@ var directories_state = {}
  */
 var UpdateDirectories = function() {
 
+    var devices = angular.element(document.getElementById('notmanCtrl')).scope().devices;
+    console.log("all devices locations:");
+
+    $.each(devices, function(a,b){
+        console.log(b.event.receiverDirectory);
+    });
+
+
     var ambiarc = $("#ambiarcIframe")[0].contentWindow.Ambiarc;
     var directoryArray = angular.element(document.getElementById('notmanCtrl')).scope().directories;
 
-    for (var dir in directoryArray) {
-        var dirId = directoryArray[dir].id
-        var img = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")) + '/img/dot_gray.png';
-        if (directoryArray[dir].deviceCount > 0) {
-            img = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")) +'/img/dot_green.png';
-            if(directories_state[dirId]  && directories[dirId] != undefined) {
-              return;
-            }
+    $.each(directoryArray, function(i, directory){
+
+        console.log("each...");
+        console.log(directory);
+        var dirId = directory.id;
+
+        var iconColor = (directory.deviceCount > 0) ? 'dot_green.png' : 'dot_gray.png'
+        var img = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")) +'/img/'+iconColor;
+
+        if(!directories[dirId]){
+
+            // skip to next iteration, device count < 0 and not in array
+            if(directory.deviceCount == 0) return true;
+
+            console.log("creating...");
+            // CREATE MAP
             directories_state[dirId] = true;
-        } else {
-            if(!directories_state[dirId]  && directories[dirId] != undefined) return;
-            directories_state[dirId] = false;
-        }
-        if (directories[dirId] != undefined && !directories_state[dirId]) {
-            var device = directoryArray[dir].devices[Object.keys(directoryArray[dir].devices)[0]];
-            var floorName = directoryArray[dir].id.split(':')[1];
-            var floorNum = floorsObject[floorName];
 
-            if (directoryArray[dir].deviceCount == 0){
-              var latitude =  ambiarc.poiList[dirId].latitude;
-              var longitude =  ambiarc.poiList[dirId].longitude;
-            }
-            else {
-                var latitude = device.event.position[1];
-                var longitude = device.event.position[0];
-            }
-
-            var mapLabelInfo = {
-                mapLabelId: directories[dirId],
-                buildingId: 'B00001',
-                floorId: floorNum,
-                showTooltip: true,
-                tooltipTitle: dirId,
-                latitude: latitude,
-                longitude: longitude,
-                category: 'Label',
-                location: 'URL',
-                partialPath: img,
-                label: dirId,
-                fontSize: 26,
-                showOnCreation: true
-            };
-            ambiarc.updateMapLabel(directories[dirId], ambiarc.mapLabel.IconWithText, mapLabelInfo);
-        } else if (directories[dirId] == undefined && directoryArray[dir].deviceCount > 0) {
-            var deviceKey = Object.keys(directoryArray[dir].devices)[0];
-            console.log(deviceKey);
-            var dirId = dirId;
-            var floorName = directoryArray[dir].id.split(':')[1];
+            var floorName = directory.id.split(':')[1];
             var floorNum = floorsObject[floorName];
+            var deviceKey = Object.keys(directory.devices)[0];
 
             //sometimes reelyactive sends empty devices property - in that case we're creating label on next periodic update
             try{
-              var latitude = directoryArray[dir].devices[deviceKey].event.position[1];
-              var longitude = directoryArray[dir].devices[deviceKey].event.position[0];
+                var latitude = directory.devices[deviceKey].event.position[1];
+                var longitude = directory.devices[deviceKey].event.position[0];
+                var devicesNum = directory.deviceCount;
+
+                if(latitude && longitude) {
+
+                    var mapLabelInfo = {
+                        buildingId: 'B00001',
+                        floorId: floorNum,
+                        showTooltip: true,
+                        tooltipTitle: devicesNum,
+                        latitude: latitude,
+                        longitude: longitude,
+                        category: 'Label',
+                        location: 'URL',
+                        label: dirId,
+                        fontSize: 26,
+                        partialPath: img,
+                        showOnCreation: true
+                    };
+
+                    ambiarc.createMapLabel(ambiarc.mapLabel.IconWithText, mapLabelInfo, function(labelId) {
+                        directories[dirId] = {};
+                        directories[dirId] = labelId;
+                    ambiarc.poiList[dirId] = mapLabelInfo;
+                    });
+                }
+
             }
             catch(e){
                 console.log("devices property undefined")
             }
+        }
+        else {
 
-            if(latitude && longitude) {
+            console.log("UPDATING MAP LABEL:");
+            console.log(img);
+            // UPDATE MAP
+
+            if (directory.deviceCount == 0){
+                var latitude =  ambiarc.poiList[dirId].latitude;
+                var longitude =  ambiarc.poiList[dirId].longitude;
+                var devicesNum = 0;
+                    directories_state[dirId] = false;
+            }
+            else {
+                try{
+                    var device = directory.devices[Object.keys(directory.devices)[0]];
+                    var latitude = device.event.position[1];
+                    var longitude = device.event.position[0];
+                    var devicesNum = directory.deviceCount;
+                    directories_state[dirId] = true;
+                }
+                catch(e){
+                    return true
+                }
+            }
+
+            if(latitude && longitude){
+                var floorName = directory.id.split(':')[1];
+                var floorNum = floorsObject[floorName];
 
                 var mapLabelInfo = {
+                    mapLabelId: directories[dirId],
                     buildingId: 'B00001',
                     floorId: floorNum,
                     showTooltip: true,
-                    tooltipTitle: dirId,
+                    tooltipTitle: devicesNum,
                     latitude: latitude,
                     longitude: longitude,
                     category: 'Label',
                     location: 'URL',
+                    partialPath: img,
                     label: dirId,
                     fontSize: 26,
-                    partialPath: img,
                     showOnCreation: true
                 };
-
-                ambiarc.createMapLabel(ambiarc.mapLabel.IconWithText, mapLabelInfo, (labelId) => {
-                    directories[dirId] = {}
-                    directories[dirId] = labelId;
+                ambiarc.updateMapLabel(directories[dirId], ambiarc.mapLabel.IconWithText, mapLabelInfo);
                 ambiarc.poiList[dirId] = mapLabelInfo;
-            });
             }
         }
-    }
+    });
 }
 
 
