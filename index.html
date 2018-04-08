@@ -1,34 +1,57 @@
 <html>
+    <head>
+        <title>Ambiarc</title>
 
-<head>
-    <title>Ambiarc</title>
-    <script type="text/javascript" src="js/config.js"></script>
-    <script type="text/javascript" src="data/directories.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style/index.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
-    <script src="./TemplateData/js/jquery-2.2.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/beaver.js"></script>
-    <script type="text/javascript" src="js/dashboard.js"></script>
-    <script type="text/javascript" src="js/controller.js"></script>
-</head>
+        <!-- config variables -->
+        <script type="text/javascript" src="js/config.js"></script>
 
-<body ng-app="notman" style="pointer-events: none">
+        <!-- javascript files -->
+        <script type="text/javascript" src="data/directories.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+        <script src="./TemplateData/js/jquery-2.2.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/beaver.js"></script>
+        <script type="text/javascript" src="js/dashboard.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
+        <script type="text/javascript" src="js/move-controls-ui.js"></script>
 
-<div id="bootstrap" hidden>
-    <div class="container" style="z-index:100;"></div>
-</div>
+        <!-- styling -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/icons.css" rel="stylesheet">
+    </head>
 
+    <body ng-app="notman" style="pointer-events: none">
 
-<div id="notmanCtrl" ng-controller="notmanCtrl">
-    <iframe src="./map.html" id="ambiarcIframe" style="width:100%; height:100%; border:none; top:
-       0; z-index:-1; position:fixed; pointer-events: all;">
-        Your browser doesn't support iframes
-    </iframe>
-</div>
-</body>
+        <div id="bootstrap" hidden>
+            <div class="container" style="z-index:100;"></div>
+        </div>
+        <div id="notmanCtrl" ng-controller="notmanCtrl">
+            <iframe src="./map.html" id="ambiarcIframe" style="width:100%; height:100%; border:none; top:
+               0; z-index:-1; position:fixed; pointer-events: all;">
+                Your browser doesn't support iframes
+            </iframe>
+        </div>
 
+        <!--Controls section-->
+        <div>
+            <div id="controls-section" style="pointer-events: all">
+                <ul>
+                    <li class="">
+                        <div class="controls-btn ctrl-zoom-in" aria-hidden="true"></div>
+                    </li>
+                    <li class="">
+                        <div class=" controls-btn ctrl-rotate-left" aria-hidden="true"></div>
+                        <div class="controls-btn ctrl-rotate-right" aria-hidden="true"></div>
+                    </li>
+                    <li class="">
+                        <div class=" controls-btn ctrl-zoom-out" aria-hidden="true"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </body>
 </html>

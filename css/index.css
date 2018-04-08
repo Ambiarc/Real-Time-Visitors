@@ -3,34 +3,79 @@ html {
 }
 
 body {
-   height:100vh;
+    height: 100vh;
 }
 
-.button-bar
-{
-  margin: 0 auto;
-  margin-top: 50px;
-  max-width: 600px;
-      text-align: center;
-      width: inherit;
-      display: inline-block;
+.button-bar {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 600px;
+    text-align: center;
+    width: inherit;
+    display: inline-block;
 }
 
-.button-bar-button
-{
-  min-width: 150px;
-}
-.button-bar-parent
-{
-text-align: center;
+.button-bar-button {
+    min-width: 150px;
 }
 
-.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+.button-bar-parent {
+    text-align: center;
+}
+
+.btn-default.active, .btn-default:active, .open > .dropdown-toggle.btn-default {
     color: #fff;
     background-color: #020000;
 }
 
-.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
-  color: #fff;
-  background-color: #020000;
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover {
+    color: #fff;
+    background-color: #020000;
+}
+
+/* Move controls */
+#controls-section {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#controls-section ul {
+    list-style: none;
+}
+
+.controls-btn {
+    font-size: 2.1rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    box-shadow: 0px 2px #A9A9A9;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: 100;
+    padding: 4px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.controls-btn.ctrl-rotate-left {
+    margin-left: -30px;
+}
+
+.controls-btn.ctrl-rotate-right {
+    margin-left: 20px;
 }

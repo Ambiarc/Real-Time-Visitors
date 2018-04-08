@@ -65,31 +65,44 @@ var UpdateDirectories = function() {
             };
             ambiarc.updateMapLabel(directories[dirId], ambiarc.mapLabel.IconWithText, mapLabelInfo);
         } else if (directories[dirId] == undefined && directoryArray[dir].deviceCount > 0) {
-            var deviceKey = Object.keys(directoryArray[dir].devices)[0]
+            var deviceKey = Object.keys(directoryArray[dir].devices)[0];
+            console.log(deviceKey);
             var dirId = dirId;
             var floorName = directoryArray[dir].id.split(':')[1];
             var floorNum = floorsObject[floorName];
 
-            var mapLabelInfo = {
-                buildingId: 'B00001',
-                floorId: floorNum,
-                showTooltip: true,
-                tooltipTitle: dirId,
-                latitude: directoryArray[dir].devices[deviceKey].event.position[1],
-                longitude: directoryArray[dir].devices[deviceKey].event.position[0],
-                category: 'Label',
-                location: 'URL',
-                label: dirId,
-                fontSize: 26,
-                partialPath: img,
-                showOnCreation: true
-            };
+            //sometimes reelyactive sends empty devices property - in that case we're creating label on next periodic update
+            try{
+              var latitude = directoryArray[dir].devices[deviceKey].event.position[1];
+              var longitude = directoryArray[dir].devices[deviceKey].event.position[0];
+            }
+            catch(e){
+                console.log("devices property undefined")
+            }
 
-            ambiarc.createMapLabel(ambiarc.mapLabel.IconWithText, mapLabelInfo, (labelId) => {
-                directories[dirId] = {}
-                directories[dirId] = labelId;
+            if(latitude && longitude) {
+
+                var mapLabelInfo = {
+                    buildingId: 'B00001',
+                    floorId: floorNum,
+                    showTooltip: true,
+                    tooltipTitle: dirId,
+                    latitude: latitude,
+                    longitude: longitude,
+                    category: 'Label',
+                    location: 'URL',
+                    label: dirId,
+                    fontSize: 26,
+                    partialPath: img,
+                    showOnCreation: true
+                };
+
+                ambiarc.createMapLabel(ambiarc.mapLabel.IconWithText, mapLabelInfo, (labelId) => {
+                    directories[dirId] = {}
+                    directories[dirId] = labelId;
                 ambiarc.poiList[dirId] = mapLabelInfo;
-        });
+            });
+            }
         }
     }
 }
@@ -99,8 +112,6 @@ var UpdateDirectories = function() {
  * Periodic updater function, updates device count and the map depending ont the state of the UI
  */
 var PeriodicUpdate = function() {
-
-  // document.getElementById("device_count").innerHTML = angular.element(document.getElementById('notmanCtrl')).scope().devices.length;
   UpdateDirectories();
 };
 
@@ -116,12 +127,14 @@ var iframeLoaded = function() {
 /**
  * Starts the periodic updater method and enables the UI.
  */
-var onAmbiarcLoaded = function() {
+var onAmbiarcLoaded = function () {
     ambiarc = $("#ambiarcIframe")[0].contentWindow.Ambiarc;
     ambiarc.poiList = {};
-  $('#bootstrap').removeAttr('hidden');
+    $('#bootstrap').removeAttr('hidden');
+    $('#controls-section').fadeIn();
 
-  setTimeout(function() {}, 500);
-  setInterval(PeriodicUpdate, DEFAULT_INTERVAL_MILLISECONDS);
+    setTimeout(function () {
+    }, 500);
+    setInterval(PeriodicUpdate, DEFAULT_INTERVAL_MILLISECONDS);
 
 };
