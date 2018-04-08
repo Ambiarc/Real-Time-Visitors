@@ -1,10 +1,28 @@
 html {
-
+    font-size: 12px;
 }
 
 body {
     height: 100vh;
 }
+
+input {
+    height: 25px;
+}
+
+.form-control {
+    font-size: 1rem;
+    height: 2rem;
+}
+
+.btn {
+    font-size: 1.1rem;
+}
+
+input[type='checkbox'] {
+    height: auto!important;
+}
+
 
 .button-bar {
     margin: 0 auto;
@@ -74,6 +92,7 @@ body {
 
 .controls-btn.ctrl-rotate-left {
     margin-left: -30px;
+    text-align: left;
 }
 
 .controls-btn.ctrl-rotate-right {
@@ -96,4 +115,46 @@ body {
     line-height: 30px;
     margin: auto;
     margin-top: 30px;
+}
+
+.buttons_row {
+    max-width: 300px;
+    text-align: left;
+    display: flex;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.floor_select_btn {
+    background-color: #fcfefe;
+    color: #2c7dca;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 0px;
+    width: 100%;
+    text-align: center;
+    flex: 1;
+}
+
+.col-sm floor_select_btn.map_view {
+    text-align: center;
+}
+
+.map_view {
+    padding: 5px;
+    color: #7d7d7e;
+}
+
+#bldg-floor-select {
+    padding: 5px;
+    width: 100%;
+    border: 0;
+    border-left: 1px solid lightgray;
+}
+
+.select_wrapper {
+    display: flex;
+    padding: 0;
+    flex: 2;
 }

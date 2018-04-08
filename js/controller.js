@@ -1,4 +1,4 @@
-DEFAULT_INTERVAL_MILLISECONDS = 1000;
+DEFAULT_INTERVAL_MILLISECONDS = 3000;
 DEFAULT_HOST = "http://localhost:8000";
 
 var floorsObject = {
@@ -10,7 +10,11 @@ var floorsObject = {
 
 var ambiarc;
 var directories = {};
-var directories_state = {}
+var directories_state = {};
+var currentBuildingId, currentFloorId;
+
+// global state indicating if the map is is Floor Selector mode
+var isFloorSelectorEnabled = false;
 
 
 /**
@@ -136,7 +140,59 @@ var UpdateDirectories = function() {
             }
         }
     });
-}
+};
+
+
+var fillBuildingsList = function(){
+
+    var bldgListItem = document.createElement('option');
+        bldgListItem.clasName = 'bldg-list-item';
+        bldgListItem.value = 'Exterior';
+        bldgListItem.textContent = 'Exterior';
+
+    $('#poi-bulding-id').append(bldgListItem);
+    $('#bldg-floor-select').append(bldgListItem);
+
+    ambiarc.getAllBuildings(function(buildings){
+        mainBldgID = buildings[0];
+        currentBuildingId = buildings[0];
+        currentFloorId = null;
+
+        $.each(buildings, function(id, bldgValue){
+
+            var floorList = document.createElement('select');
+            floorList.className = 'poi-floor-id poi-details-input form-control';
+            floorList.setAttribute('data-bldgId', bldgValue);
+
+            ambiarc.getAllFloors(bldgValue, function(floors){
+                $.each(floors, function(i, floorValue){
+
+                    //poi details panel floor dropdown
+                    var floorItem = document.createElement('option');
+                        floorItem.clasName = 'floor-item';
+                        floorItem.value = floorValue.id;
+                        floorItem.textContent = floorValue.id;
+                        $(floorList).append(floorItem);
+
+                    // main building-floor dropdown
+                    var listItem = document.createElement('option');
+                        listItem.clasName = 'bldg-floor-item';
+                        listItem.value = bldgValue+'::'+floorValue.id;
+                        listItem.textContent = bldgValue+': '+floorValue.id;
+                    $('#bldg-floor-select').append(listItem);
+                });
+            });
+        });
+
+        var exteriorListItem = document.createElement('option');
+        exteriorListItem.clasName = 'bldg-list-item';
+        exteriorListItem.value = 'Exterior';
+        exteriorListItem.textContent = 'Exterior';
+
+        $('#poi-bulding-id').prepend(exteriorListItem);
+
+    });
+};
 
 
 /**
@@ -159,13 +215,93 @@ var iframeLoaded = function() {
  * Starts the periodic updater method and enables the UI.
  */
 var onAmbiarcLoaded = function () {
+
     ambiarc = $("#ambiarcIframe")[0].contentWindow.Ambiarc;
+
+    ambiarc.registerForEvent(ambiarc.eventLabel.CameraMotionCompleted, cameraCompletedHandler);
+    ambiarc.registerForEvent(ambiarc.eventLabel.FloorSelected, onFloorSelected);
+    ambiarc.registerForEvent(ambiarc.eventLabel.FloorSelectorEnabled, onEnteredFloorSelector);
+
     ambiarc.poiList = {};
     $('#bootstrap').removeAttr('hidden');
     $('#controls-section').fadeIn();
+
+    fillBuildingsList();
 
     setTimeout(function () {
     }, 500);
     setInterval(PeriodicUpdate, DEFAULT_INTERVAL_MILLISECONDS);
 
 };
+
+
+var cameraCompletedHandler = function(event){
+
+    if(currentFloorId == null){
+        $('#bldg-floor-select').val('Exterior');
+    }
+    else {
+        $('#bldg-floor-select').val(currentBuildingId+'::'+currentFloorId);
+    }
+
+    // 1000 is id for exterior
+    if(event.detail == 1000){
+        ambiarc.focusOnFloor(mainBldgID, null, 300);
+        currentFloorId = null;
+        $('#bldg-floor-select').val('Exterior');
+        return;
+    }
+}
+
+
+// closes the floor menu when a floor was selected
+var onFloorSelected = function(event) {
+
+    var floorInfo = event.detail;
+    currentFloorId = floorInfo.floorId;
+
+    if(currentFloorId !== null){
+        $('#bldg-floor-select').val(currentBuildingId+'::'+currentFloorId);
+    }
+    else $('#bldg-floor-select').val('Exterior');
+    if (isFloorSelectorEnabled) {
+        $("#levels-dropdown").removeClass('open');
+        $("#levels-dropdown-button").attr('aria-expanded', false);
+        isFloorSelectorEnabled = false;
+    }
+    console.log("Ambiarc received a FloorSelected event with a buildingId of " + floorInfo.buildingId + " and a floorId of " + floorInfo.floorId);
+};
+
+
+var onEnteredFloorSelector = function(event) {
+
+    var buildingId = event.detail;
+    currentFloorId = null;
+    if (!isFloorSelectorEnabled) {
+        isFloorSelectorEnabled = true;
+        $("#levels-dropdown").addClass('open');
+        $("#levels-dropdown-button").attr('aria-expanded', true);
+    }
+    console.log("Ambiarc received a FloorSelectorEnabled event with a building of " + buildingId);
+};
+
+$('document').ready(function(){
+
+    $('body').on('change', '#bldg-floor-select', function(){
+
+        console.log("changed value!!");
+        console.log($(this).val());
+
+        if($(this).val() == 'Exterior'){
+            ambiarc.viewFloorSelector(mainBldgID, 1000);
+            return;
+        }
+
+        var parsedValue = $(this).val().split('::');
+        var buildingId = parsedValue[0];
+        var floorId = parsedValue[1];
+
+        ambiarc.focusOnFloor(buildingId, floorId, 300);
+    });
+
+})

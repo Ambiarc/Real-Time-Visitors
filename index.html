@@ -26,15 +26,30 @@
     <body ng-app="notman" style="pointer-events: none">
 
         <div id="bootstrap" hidden>
-            <div class="container" style="z-index:100;">
+            <div class="container-fluid" style="z-index:100;">
                 <div id="status_bar_container">
                     <div id="status_bar_content">
                         <span>Total devices:</span>
                         <span id="num_devices"></span>
                     </div>
+                    <div class="separate-block row buttons_row">
+                        <div class="col-sm floor_select_btn map_view">
+                            Map view
+                        </div>
+
+                        <div class="col-sm floor_select_btn select_wrapper" style="pointer-events: all">
+                            <select id="bldg-floor-select"></select>
+                        </div>
+                    </div>
                 </div>
+
+
+
             </div>
         </div>
+
+
+
         <div id="notmanCtrl" ng-controller="notmanCtrl">
             <iframe src="./map.html" id="ambiarcIframe" style="width:100%; height:100%; border:none; top:
                0; z-index:-1; position:fixed; pointer-events: all;">
