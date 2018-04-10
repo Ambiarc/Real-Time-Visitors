@@ -1,17 +1,11 @@
-DEFAULT_INTERVAL_MILLISECONDS = 2000;
+DEFAULT_INTERVAL_MILLISECONDS = 10000;
 DEFAULT_HOST = "http://localhost:8000";
-
-// var floorsObject = {
-//     first: 'L001',
-//     second: 'L002',
-//     third: 'L003',
-//     cafe: 'L004'
-// };
 
 var ambiarc;
 var directories = {};
 var directories_state = {};
 var currentBuildingId, currentFloorId;
+var previousFloor = null;
 
 // global state indicating if the map is is Floor Selector mode
 var isFloorSelectorEnabled = false;
@@ -65,6 +59,7 @@ var UpdateDirectories = function() {
                 var latitude = directory.devices[deviceKey].event.position[1];
                 var longitude = directory.devices[deviceKey].event.position[0];
                 var devicesNum = directory.deviceCount;
+                var tooltipText = devicesNum+' ACTIVE VISITORS';
 
                 if(latitude && longitude) {
 
@@ -72,7 +67,7 @@ var UpdateDirectories = function() {
                         buildingId: 'B00001',
                         floorId: floorNum,
                         showTooltip: true,
-                        tooltipTitle: devicesNum,
+                        tooltipTitle: tooltipText,
                         latitude: latitude,
                         longitude: longitude,
                         category: 'Label',
@@ -103,6 +98,7 @@ var UpdateDirectories = function() {
                 var latitude =  ambiarc.poiList[dirId].latitude;
                 var longitude =  ambiarc.poiList[dirId].longitude;
                 var devicesNum = 0;
+                var tooltipText = devicesNum+' ACTIVE VISITORS';
                     directories_state[dirId] = false;
             }
             else {
@@ -111,6 +107,7 @@ var UpdateDirectories = function() {
                     var latitude = device.event.position[1];
                     var longitude = device.event.position[0];
                     var devicesNum = directory.deviceCount;
+                    var tooltipText = devicesNum+' ACTIVE VISITORS';
                     directories_state[dirId] = true;
                 }
                 catch(e){
@@ -126,7 +123,7 @@ var UpdateDirectories = function() {
                     buildingId: 'B00001',
                     floorId: floorNum,
                     showTooltip: true,
-                    tooltipTitle: devicesNum,
+                    tooltipTitle: tooltipText,
                     latitude: latitude,
                     longitude: longitude,
                     category: 'Label',
@@ -248,10 +245,11 @@ var cameraCompletedHandler = function(event){
 
     // 1000 is id for exterior
     if(event.detail == 1000){
-        ambiarc.focusOnFloor(mainBldgID, null, 300);
+        console.log("REGISTERED 1000, CALLING EXTERIOR!!!")
+        ambiarc.focusOnFloor(mainBldgID, null);
         currentFloorId = null;
         $('#bldg-floor-select').val('Exterior');
-        return;
+        isFloorSelectorEnabled = false;
     }
 }
 
@@ -260,7 +258,27 @@ var cameraCompletedHandler = function(event){
 var onFloorSelected = function(event) {
 
     var floorInfo = event.detail;
+    console.log("floor info:");
+    console.log(event);
     currentFloorId = floorInfo.floorId;
+    previousFloor = floorInfo.floorId;
+
+
+    if(currentFloorId == null){
+
+        console.log("current floor is null1!!!!!!");
+        console.log(currentFloorId);
+
+        $('#select2-bldg-floor-select-container').html('Exterior');
+    }
+    else {
+
+        console.log("CURRENT FLOOR NOT NULL!!");
+        console.log($('#bldg-floor-select').val());
+
+        $('#select2-bldg-floor-select-container').html(currentBuildingId+'::'+currentFloorId);
+        $('#bldg-floor-select').select2('close')
+    }
 
     if(currentFloorId !== null){
         $('#bldg-floor-select').val(currentBuildingId+'::'+currentFloorId);
@@ -289,21 +307,63 @@ var onEnteredFloorSelector = function(event) {
 
 $('document').ready(function(){
 
+    $('#bldg-floor-select').select2();
+
     $('body').on('change', '#bldg-floor-select', function(){
 
         console.log("changed value!!");
         console.log($(this).val());
 
+        $('#select2-bldg-floor-select-container').html($(this).val());
+
         if($(this).val() == 'Exterior'){
-            ambiarc.viewFloorSelector(mainBldgID, 1000);
+            console.log("CALLING EXTERIOR!!!");
+            // ambiarc.viewFloorSelector(mainBldgID, 1000);
+            ambiarc.focusOnFloor(mainBldgID, null);
+
+            var currentBuildingId = mainBldgID;
+            var currentFloorId = null;
             return;
         }
 
         var parsedValue = $(this).val().split('::');
-        var buildingId = parsedValue[0];
-        var floorId = parsedValue[1];
+        var currentBuildingId = parsedValue[0];
+        var currentFloorId = parsedValue[1];
 
-        ambiarc.focusOnFloor(buildingId, floorId, 300);
+        ambiarc.focusOnFloor(currentBuildingId, currentFloorId);
     });
 
+    $('.floor_select_btn').find('.select2').on('click', function(){
+        console.log("clicked select form");
+
+        // console.log($('.select2-container--open').is(':visible'));
+
+        if($('.select2-container--open').is(':visible') == false){
+
+            console.log("CLICK EVENT");
+
+            // return to previous floor
+            if(currentBuildingId != undefined){
+                // focus to exterior
+                if(currentFloorId == null){ ambiarc.focusOnFloor(currentBuildingId, null);}
+                // focus to normal floor
+                else { ambiarc.focusOnFloor(currentBuildingId, previousFloor); }
+            }
+
+            else { ambiarc.focusOnFloor(mainBldgID, null); }
+
+            isFloorSelectorEnabled = false;
+        }
+
+        else {
+            // call selector mode
+            console.log("floor selector:");
+            console.log(isFloorSelectorEnabled);
+            if(isFloorSelectorEnabled) { return; }
+            else {
+                ambiarc.viewFloorSelector(mainBldgID);
+                isFloorSelectorEnabled = true;
+            }
+        }
+    });
 })

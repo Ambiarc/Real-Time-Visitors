@@ -17,6 +17,10 @@
         <script type="text/javascript" src="js/controller.js"></script>
         <script type="text/javascript" src="js/move-controls-ui.js"></script>
 
+        <!-- select2 -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
         <!-- styling -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
@@ -31,22 +35,22 @@
 
                     <div id="status_bar_content">
                         <div id="total_devices" class="col-sm-6">
-                            <span>Total devices:</span>
                             <span id="tot_num_devices"></span>
+                            <span>ACTIVE VISITORS</span>
                         </div>
                         <div id="floor_devices" class="col-sm-6">
-                            <span>Floor Devices:</span>
                             <span id="floor_num_devices"></span>
+                            <span>ACTIVE VISITORS ON FLOOR</span>
                         </div>
 
                     </div>
 
-                    <div class="separate-block row buttons_row">
-                        <div class="col-sm floor_select_btn map_view">
+                    <div class="separate-block buttons_row">
+                        <div class="col-sm-6 floor_select_btn map_view">
                             Map view
                         </div>
 
-                        <div class="col-sm floor_select_btn select_wrapper" style="pointer-events: all">
+                        <div class="col-sm-6 floor_select_btn select_wrapper" style="pointer-events: all">
                             <select id="bldg-floor-select"></select>
                         </div>
                     </div>

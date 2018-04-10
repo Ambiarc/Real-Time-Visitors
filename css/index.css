@@ -104,6 +104,9 @@ input[type='checkbox'] {
 
 #status_bar_container {
     text-align: center;
+    /*margin: auto;*/
+    max-width: 600px;
+    width: 40%;
 }
 
 #status_bar_content {
@@ -113,28 +116,23 @@ input[type='checkbox'] {
     max-width: 600px;
     height: 30px;
     line-height: 30px;
-    margin: auto;
     margin-top: 30px;
 }
 
 .buttons_row {
-    max-width: 300px;
+    width: 300px;
     text-align: left;
-    display: flex;
-    margin: 0;
     margin-top: 30px;
 }
 
 .floor_select_btn {
     background-color: #fcfefe;
-    color: #2c7dca;
     font-weight: 500;
     font-size: 1.2rem;
     cursor: pointer;
     border: 0px;
-    width: 100%;
+    width: 50%;
     text-align: center;
-    flex: 1;
 }
 
 .col-sm floor_select_btn.map_view {
@@ -144,6 +142,7 @@ input[type='checkbox'] {
 .map_view {
     padding: 5px;
     color: #7d7d7e;
+    border-right: 1px solid #7d7d7e;
 }
 
 #bldg-floor-select {
@@ -154,7 +153,34 @@ input[type='checkbox'] {
 }
 
 .select_wrapper {
-    display: flex;
-    padding: 0;
-    flex: 2;
+    pointer-events: all;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 1px;
+}
+
+.floor_select_btn * {
+    pointer-events: all;
+    color: #2c7dca!important;
+}
+
+.floor_select_btn .select2 {
+    width: 100%!important;
+}
+
+.floor_select_btn .select2-selection {
+    border-radius: 0!important;
+    border: 0!important;
+}
+
+.select2-search.select2-search--dropdown{
+    display:none;
+}
+
+.select2-results * {
+    pointer-events: all!important;
+}
+
+.hidden_selector {
+    display: none;
 }
