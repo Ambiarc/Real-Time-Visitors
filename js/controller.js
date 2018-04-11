@@ -42,6 +42,9 @@ var updateReceiverState = function(){
         var devicesNum = directory.deviceCount;
         var tooltipText = devicesNum+' ACTIVE VISITORS';
 
+        if(typeof currentLabelInfo === 'undefined'){
+            return;
+        }
         currentLabelInfo.partialPath = img;
         currentLabelInfo.tooltipTitle = tooltipText;
 
