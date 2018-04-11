@@ -11,5 +11,5 @@ To run the project with live data, you'll need to add a reelyActive API key to t
 #### Ambiarc Documentation
 More info can be found here: [AmbiarcSDK Documentation](http://ambiarc.com/documentation.html)
 
-### reelyActive Documentation
+#### reelyActive Documentation
 More info can be found here: [reelyActive for Developers](https://reelyactive.github.io/)
