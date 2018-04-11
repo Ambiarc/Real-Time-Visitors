@@ -10,7 +10,6 @@ var previousFloor = null;
 // global state indicating if the map is is Floor Selector mode
 var isFloorSelectorEnabled = false;
 
-
 var updateDevicesNumbers = function(){
 
     //all devices
@@ -141,6 +140,39 @@ var UpdateDirectories = function() {
 };
 
 
+function fillBuildingsListHardcoded(){
+
+    var bldgListItem = document.createElement('option');
+    bldgListItem.clasName = 'bldg-list-item';
+    bldgListItem.value = 'Exterior';
+    bldgListItem.textContent = 'Exterior';
+    $('#poi-bulding-id').append(bldgListItem);
+    $('#bldg-floor-select').append(bldgListItem);
+
+    ambiarc.getAllBuildings(function(buildings){
+        mainBldgID = buildings[0];
+        currentBuildingId = buildings[0];
+        currentFloorId = null;
+
+        $.each(buildings, function(id, bldgValue){
+
+            var floorList = document.createElement('select');
+            floorList.className = 'poi-floor-id poi-details-input form-control';
+            floorList.setAttribute('data-bldgId', bldgValue);
+
+            $.each(config.floorsNameHolders, function(key, value){
+                var listItem = document.createElement('option');
+                listItem.clasName = 'bldg-floor-item';
+                listItem.value = key;
+                listItem.textContent = value;
+                $('#bldg-floor-select').append(listItem);
+            });
+        });
+    });
+}
+
+
+// temporary not in use - waiting for possble map update
 var fillBuildingsList = function(){
 
     var bldgListItem = document.createElement('option');
@@ -176,7 +208,8 @@ var fillBuildingsList = function(){
                     var listItem = document.createElement('option');
                         listItem.clasName = 'bldg-floor-item';
                         listItem.value = bldgValue+'::'+floorValue.id;
-                        listItem.textContent = bldgValue+': '+floorValue.id;
+                        // listItem.textContent = bldgValue+': '+floorValue.id;
+                        listItem.textContent = config.floorsNameHolders[floorValue.id];
                     $('#bldg-floor-select').append(listItem);
                 });
             });
@@ -186,6 +219,8 @@ var fillBuildingsList = function(){
         exteriorListItem.clasName = 'bldg-list-item';
         exteriorListItem.value = 'Exterior';
         exteriorListItem.textContent = 'Exterior';
+
+
 
         $('#poi-bulding-id').prepend(exteriorListItem);
 
@@ -225,7 +260,7 @@ var onAmbiarcLoaded = function () {
     $('#bootstrap').removeAttr('hidden');
     $('#controls-section').fadeIn();
 
-    fillBuildingsList();
+    fillBuildingsListHardcoded();
 
     setTimeout(function () {
     }, 500);
@@ -276,7 +311,7 @@ var onFloorSelected = function(event) {
         console.log("CURRENT FLOOR NOT NULL!!");
         console.log($('#bldg-floor-select').val());
 
-        $('#select2-bldg-floor-select-container').html(currentBuildingId+'::'+currentFloorId);
+        $('#select2-bldg-floor-select-container').html(config.floorsNameHolders[currentBuildingId+'::'+currentFloorId]);
         $('#bldg-floor-select').select2('close')
     }
 
