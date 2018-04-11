@@ -261,6 +261,7 @@ var onAmbiarcLoaded = function () {
     $('#controls-section').fadeIn();
 
     fillBuildingsListHardcoded();
+    importGeoData();
 
     setTimeout(function () {
     }, 500);
@@ -340,6 +341,63 @@ var onEnteredFloorSelector = function(event) {
     console.log("Ambiarc received a FloorSelectorEnabled event with a building of " + buildingId);
 };
 
+
+var importGeoData = function(){
+
+    console.log("import geo data!!");
+
+    $.ajax({
+        url: 'map/geodata.json',
+        type: 'get',
+        success: function(res) {
+            console.log("success!!");
+            console.log(JSON.stringify(res));
+
+            try {
+                loadReceiversData(res);
+            }
+            catch (e) {
+                console.log("Please select valid json file");
+                console.log(e);
+                return;
+            }
+        },
+        error: function(e){
+            console.log("error loading file...");
+            console.log(e);
+        }
+    });
+};
+
+
+
+var loadReceiversData = function (properties) {
+
+    console.log("LOADING RECEIVERS DATA!!!");
+
+    $.each(properties.features, function (i, feature) {
+        var mapLabelInfo = feature.properties;
+        mapLabelInfo.longitude = parseFloat(feature.geometry.coordinates[0]);
+        mapLabelInfo.latitude = parseFloat(feature.geometry.coordinates[1]);
+
+        $.each(feature.user_properties, function (prop, val) {
+            mapLabelInfo[prop] = val;
+        });
+
+        ambiarc.createMapLabel(mapLabelInfo.type, mapLabelInfo, function(labelId) {
+            mapLabelCreatedCallback(labelId, mapLabelInfo.label, mapLabelInfo);
+        });
+    });
+};
+
+
+// Callback thats updates the UI after a POI is created
+var mapLabelCreatedCallback = function(labelId, labelName, mapLabelInfo) {
+    // push reference of POI to list
+    ambiarc.poiList[labelId] = mapLabelInfo;
+}
+
+
 $('document').ready(function(){
 
     $('#bldg-floor-select').select2();
@@ -367,6 +425,10 @@ $('document').ready(function(){
 
         ambiarc.focusOnFloor(currentBuildingId, currentFloorId);
     });
+
+
+
+
 
     $('.floor_select_btn').find('.select2').on('click', function(){
         console.log("clicked select form");
@@ -401,4 +463,4 @@ $('document').ready(function(){
             }
         }
     });
-})
+});
