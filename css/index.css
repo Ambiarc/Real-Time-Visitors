@@ -110,13 +110,15 @@ input[type='checkbox'] {
 }
 
 #status_bar_content {
-    background-color: #ffffff;
-    border: 1px solid #d3d3d3;
-    color: #2c7dca;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0;
+    color: #ffffff;
     max-width: 600px;
-    height: 30px;
-    line-height: 30px;
+    height: 25px;
+    line-height: 25px;
     margin-top: 30px;
+    font-size: 1.2rem;
+    padding-top: 1px;
 }
 
 .buttons_row {
