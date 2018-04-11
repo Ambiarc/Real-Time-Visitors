@@ -6,6 +6,8 @@ This project demonstrates integration of a reelyActive websockets data feed (usi
 
 To run the project with live data, you'll need to add a reelyActive API key to the config.js file. The demo links shows full functionality. 
 
+![Alt text](screenshot.png?raw=true "Optional Title")
+
 #### Ambiarc Documentation
 More info can be found here: [AmbiarcSDK Documentation](http://ambiarc.com/documentation.html)
 
