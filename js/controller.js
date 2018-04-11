@@ -29,6 +29,44 @@ var updateDevicesNumbers = function(){
 };
 
 
+var updateReceiverState = function(){
+    console.log("update receiver state function!");
+
+    var directoriesArray = angular.element(document.getElementById('notmanCtrl')).scope().directories;
+
+    $.each(directoriesArray, function(i, directory){
+        var iconColor = (directory.deviceCount > 0) ? 'dot_green.png' : 'dot_gray.png';
+        var img = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")) +'/img/'+iconColor;
+        var mapLabelId = directories[directory.id];
+        var currentLabelInfo = ambiarc.poiList[mapLabelId];
+        var devicesNum = directory.deviceCount;
+        var tooltipText = devicesNum+' ACTIVE VISITORS';
+
+        currentLabelInfo.partialPath = img;
+        currentLabelInfo.tooltipTitle = tooltipText;
+
+        var mapLabelInfo = {
+            mapLabelId: mapLabelId,
+            buildingId: 'B00001',
+            floorId: currentLabelInfo.floorId,
+            showTooltip: true,
+            tooltipTitle: tooltipText,
+            latitude: currentLabelInfo.latitude,
+            longitude: currentLabelInfo.longitude,
+            category: 'Label',
+            location: 'URL',
+            partialPath: img,
+            label: currentLabelInfo.label,
+            fontSize: 26,
+            showOnCreation: true
+        };
+
+        ambiarc.updateMapLabel(mapLabelId, ambiarc.mapLabel.IconWithText, mapLabelInfo);
+    });
+};
+
+
+
 /**
  * Update function "OFFICE AVAILABLITY" mode. Goes through directories and activates them if they have a deviceCount above 0.
  */
@@ -232,7 +270,7 @@ var fillBuildingsList = function(){
  * Periodic updater function, updates device count and the map depending ont the state of the UI
  */
 var PeriodicUpdate = function () {
-    UpdateDirectories();
+    updateReceiverState();
     updateDevicesNumbers();
 };
 
@@ -384,18 +422,21 @@ var loadReceiversData = function (properties) {
             mapLabelInfo[prop] = val;
         });
 
+        console.log("mapLabelInfo before createmaplabel:");
+        console.log(mapLabelInfo);
+
         ambiarc.createMapLabel(mapLabelInfo.type, mapLabelInfo, function(labelId) {
-            mapLabelCreatedCallback(labelId, mapLabelInfo.label, mapLabelInfo);
+            // push reference of POI to list
+            console.log("checking malabelproperties...:");
+            console.log(mapLabelInfo);
+            var dirId = mapLabelInfo.directoryId;
+
+            directories[dirId] = {};
+            directories[dirId] = labelId;
+            ambiarc.poiList[labelId] = mapLabelInfo;
         });
     });
 };
-
-
-// Callback thats updates the UI after a POI is created
-var mapLabelCreatedCallback = function(labelId, labelName, mapLabelInfo) {
-    // push reference of POI to list
-    ambiarc.poiList[labelId] = mapLabelInfo;
-}
 
 
 $('document').ready(function(){

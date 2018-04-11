@@ -25,7 +25,9 @@
                     45.51191711425781
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:first:west"
+            }
         },
         {
             "type": "Feature",
@@ -51,7 +53,9 @@
                     45.5120849609375
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:first:east"
+            }
         },
         {
             "type": "Feature",
@@ -77,7 +81,9 @@
                     45.51201248168945
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:first:centre"
+            }
         },
         {
             "type": "Feature",
@@ -103,7 +109,9 @@
                     45.511932373046875
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:second:west"
+            }
         },
         {
             "type": "Feature",
@@ -129,7 +137,9 @@
                     45.5120964050293
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:second:east"
+            }
         },
         {
             "type": "Feature",
@@ -155,7 +165,9 @@
                     45.51200485229492
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:second:centre"
+            }
         },
         {
             "type": "Feature",
@@ -181,7 +193,9 @@
                     45.51200866699219
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:cafe"
+            }
         },
         {
             "type": "Feature",
@@ -207,14 +221,16 @@
                     45.51190185546875
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:third:west"
+            }
         },
         {
             "type": "Feature",
             "properties": {
                 "buildingId": "B00001",
                 "floorId": "L003",
-                "label": "notman:third:right",
+                "label": "notman:third:east",
                 "fontSize": 26,
                 "category": "Label",
                 "location": "Base64",
@@ -233,7 +249,9 @@
                     45.51211166381836
                 ]
             },
-            "user_properties": {}
+            "user_properties": {
+                "directoryId": "notman:third:east"
+            }
         }
     ]
 }

@@ -1,6 +1,6 @@
 var config = {
 
-    // paretoToken: '<YOUR API KEY>'
+    // paretoToken: '<YOUR API KEY'>
     paretoURL: 'https://pareto.reelyactive.com',
     apiRoot: 'https://pareto.reelyactive.com',
     defaultDirectoryId: 'Unspecified',
