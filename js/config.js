@@ -25,6 +25,12 @@ var config = {
         'notman:third:west': 'L003',
         'notman:third:east': 'L003',
         'notman:cafe' : 'L004'
+    },
+    floorsNameHolders: {
+        'B00001::L003': 'Third Floor',
+        'B00001::L002': 'Second Floor',
+        'B00001::L001': 'Main Floor',
+        'B00001::L004': 'Basement'
     }
 };
 
