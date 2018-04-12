@@ -11,19 +11,16 @@ var previousFloor = null;
 var isFloorSelectorEnabled = false;
 
 var updateDevicesNumbers = function(){
-
     //all devices
     var devices = angular.element(document.getElementById('notmanCtrl')).scope().devices;
 
     //devices on selected floor
     var devicesOnFLoor = 0;
     $.each(devices, function(i, device){
-
         if(config.recieverFloors[device.event.receiverDirectory] == currentFloorId){
             devicesOnFLoor ++;
         }
     });
-
     $('#tot_num_devices').html(devices.length);
     $('#floor_num_devices').html(devicesOnFLoor);
 };
@@ -63,120 +60,7 @@ var updateReceiverState = function(){
             fontSize: 26,
             showOnCreation: true
         };
-
         ambiarc.updateMapLabel(mapLabelId, ambiarc.mapLabel.IconWithText, mapLabelInfo);
-    });
-};
-
-
-
-/**
- * Update function "OFFICE AVAILABLITY" mode. Goes through directories and activates them if they have a deviceCount above 0.
- */
-var UpdateDirectories = function() {
-
-    var ambiarc = $("#ambiarcIframe")[0].contentWindow.Ambiarc;
-    var directoryArray = angular.element(document.getElementById('notmanCtrl')).scope().directories;
-
-    $.each(directoryArray, function(i, directory){
-        var dirId = directory.id;
-        var iconColor = (directory.deviceCount > 0) ? 'dot_green.png' : 'dot_gray.png'
-        var img = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")) +'/img/'+iconColor;
-
-        if(!directories[dirId]){
-
-            // skip to next iteration, device count < 0 and not in array
-            if(directory.deviceCount == 0) return true;
-
-            // CREATE MAP
-            directories_state[dirId] = true;
-
-            var floorNum = config.recieverFloors[directory.id];
-            var deviceKey = Object.keys(directory.devices)[0];
-
-            //sometimes reelyactive sends empty devices property - in that case we're creating label on next periodic update
-            try{
-                var latitude = directory.devices[deviceKey].event.position[1];
-                var longitude = directory.devices[deviceKey].event.position[0];
-                var devicesNum = directory.deviceCount;
-                var tooltipText = devicesNum+' ACTIVE VISITORS';
-
-                if(latitude && longitude) {
-
-                    var mapLabelInfo = {
-                        buildingId: 'B00001',
-                        floorId: floorNum,
-                        showTooltip: true,
-                        tooltipTitle: tooltipText,
-                        latitude: latitude,
-                        longitude: longitude,
-                        category: 'Label',
-                        location: 'URL',
-                        label: dirId,
-                        fontSize: 26,
-                        partialPath: img,
-                        showOnCreation: true
-                    };
-
-                    ambiarc.createMapLabel(ambiarc.mapLabel.IconWithText, mapLabelInfo, function(labelId) {
-                        directories[dirId] = {};
-                        directories[dirId] = labelId;
-                    ambiarc.poiList[dirId] = mapLabelInfo;
-                    });
-                }
-
-            }
-            catch(e){
-                console.log("devices property undefined")
-            }
-        }
-        else {
-
-            // UPDATE MAP
-
-            if (directory.deviceCount == 0){
-                var latitude =  ambiarc.poiList[dirId].latitude;
-                var longitude =  ambiarc.poiList[dirId].longitude;
-                var devicesNum = 0;
-                var tooltipText = devicesNum+' ACTIVE VISITORS';
-                    directories_state[dirId] = false;
-            }
-            else {
-                try{
-                    var device = directory.devices[Object.keys(directory.devices)[0]];
-                    var latitude = device.event.position[1];
-                    var longitude = device.event.position[0];
-                    var devicesNum = directory.deviceCount;
-                    var tooltipText = devicesNum+' ACTIVE VISITORS';
-                    directories_state[dirId] = true;
-                }
-                catch(e){
-                    return true
-                }
-            }
-
-            if(latitude && longitude){
-                var floorNum = config.recieverFloors[directory.id];
-
-                var mapLabelInfo = {
-                    mapLabelId: directories[dirId],
-                    buildingId: 'B00001',
-                    floorId: floorNum,
-                    showTooltip: true,
-                    tooltipTitle: tooltipText,
-                    latitude: latitude,
-                    longitude: longitude,
-                    category: 'Label',
-                    location: 'URL',
-                    partialPath: img,
-                    label: dirId,
-                    fontSize: 26,
-                    showOnCreation: true
-                };
-                ambiarc.updateMapLabel(directories[dirId], ambiarc.mapLabel.IconWithText, mapLabelInfo);
-                ambiarc.poiList[dirId] = mapLabelInfo;
-            }
-        }
     });
 };
 
@@ -213,7 +97,7 @@ function fillBuildingsListHardcoded(){
 }
 
 
-// temporary not in use - waiting for possble map update
+// temporary not in use - waiting for possible map update
 var fillBuildingsList = function(){
 
     var bldgListItem = document.createElement('option');
@@ -255,16 +139,12 @@ var fillBuildingsList = function(){
                 });
             });
         });
-
         var exteriorListItem = document.createElement('option');
         exteriorListItem.clasName = 'bldg-list-item';
         exteriorListItem.value = 'Exterior';
         exteriorListItem.textContent = 'Exterior';
 
-
-
         $('#poi-bulding-id').prepend(exteriorListItem);
-
     });
 };
 
@@ -290,24 +170,31 @@ var iframeLoaded = function() {
  * Starts the periodic updater method and enables the UI.
  */
 var onAmbiarcLoaded = function () {
-
     ambiarc = $("#ambiarcIframe")[0].contentWindow.Ambiarc;
+    ambiarc.poiList = {};
 
     ambiarc.registerForEvent(ambiarc.eventLabel.CameraMotionCompleted, cameraCompletedHandler);
     ambiarc.registerForEvent(ambiarc.eventLabel.FloorSelected, onFloorSelected);
     ambiarc.registerForEvent(ambiarc.eventLabel.FloorSelectorEnabled, onEnteredFloorSelector);
 
-    ambiarc.poiList = {};
     $('#bootstrap').removeAttr('hidden');
     $('#controls-section').fadeIn();
-
     fillBuildingsListHardcoded();
-    importGeoData();
 
+    // loading imported labels and associating maplabel ids with directory ids
+    ambiarc.loadRemoteMapLabels('map/geodata.json')
+        .then((mapLabels) => {
+            mapLabels.forEach((element, i) => {
+                var mapLabelInfo = element.properties;
+                var directoryId = element.user_properties.directoryId;
+                directories[directoryId] = {};
+                directories[directoryId] = mapLabelInfo.id;
+                ambiarc.poiList[mapLabelInfo.id] = mapLabelInfo;
+            });
+        });
     setTimeout(function () {
     }, 500);
     setInterval(PeriodicUpdate, DEFAULT_INTERVAL_MILLISECONDS);
-
 };
 
 
@@ -335,24 +222,13 @@ var cameraCompletedHandler = function(event){
 var onFloorSelected = function(event) {
 
     var floorInfo = event.detail;
-    console.log("floor info:");
-    console.log(event);
     currentFloorId = floorInfo.floorId;
     previousFloor = floorInfo.floorId;
 
-
     if(currentFloorId == null){
-
-        console.log("current floor is null1!!!!!!");
-        console.log(currentFloorId);
-
         $('#select2-bldg-floor-select-container').html('Exterior');
     }
     else {
-
-        console.log("CURRENT FLOOR NOT NULL!!");
-        console.log($('#bldg-floor-select').val());
-
         $('#select2-bldg-floor-select-container').html(config.floorsNameHolders[currentBuildingId+'::'+currentFloorId]);
         $('#bldg-floor-select').select2('close')
     }
@@ -383,86 +259,20 @@ var onEnteredFloorSelector = function(event) {
 };
 
 
-var importGeoData = function(){
-
-    console.log("import geo data!!");
-
-    $.ajax({
-        url: 'map/geodata.json',
-        type: 'get',
-        success: function(res) {
-            console.log("success!!");
-            console.log(JSON.stringify(res));
-
-            try {
-                loadReceiversData(res);
-            }
-            catch (e) {
-                console.log("Please select valid json file");
-                console.log(e);
-                return;
-            }
-        },
-        error: function(e){
-            console.log("error loading file...");
-            console.log(e);
-        }
-    });
-};
-
-
-
-var loadReceiversData = function (properties) {
-
-    console.log("LOADING RECEIVERS DATA!!!");
-
-    $.each(properties.features, function (i, feature) {
-        var mapLabelInfo = feature.properties;
-        mapLabelInfo.longitude = parseFloat(feature.geometry.coordinates[0]);
-        mapLabelInfo.latitude = parseFloat(feature.geometry.coordinates[1]);
-
-        $.each(feature.user_properties, function (prop, val) {
-            mapLabelInfo[prop] = val;
-        });
-
-        console.log("mapLabelInfo before createmaplabel:");
-        console.log(mapLabelInfo);
-
-        ambiarc.createMapLabel(mapLabelInfo.type, mapLabelInfo, function(labelId) {
-            // push reference of POI to list
-            console.log("checking malabelproperties...:");
-            console.log(mapLabelInfo);
-            var dirId = mapLabelInfo.directoryId;
-
-            directories[dirId] = {};
-            directories[dirId] = labelId;
-            ambiarc.poiList[labelId] = mapLabelInfo;
-        });
-    });
-};
-
-
 $('document').ready(function(){
 
+    //initializing selec2 selector
     $('#bldg-floor-select').select2();
 
     $('body').on('change', '#bldg-floor-select', function(){
 
-        console.log("changed value!!");
-        console.log($(this).val());
-
         $('#select2-bldg-floor-select-container').html($(this).val());
-
         if($(this).val() == 'Exterior'){
-            console.log("CALLING EXTERIOR!!!");
-            // ambiarc.viewFloorSelector(mainBldgID, 1000);
             ambiarc.focusOnFloor(mainBldgID, null);
-
-            var currentBuildingId = mainBldgID;
-            var currentFloorId = null;
+            currentBuildingId = mainBldgID;
+            currentFloorId = null;
             return;
         }
-
         var parsedValue = $(this).val().split('::');
         var currentBuildingId = parsedValue[0];
         var currentFloorId = parsedValue[1];
@@ -471,17 +281,9 @@ $('document').ready(function(){
     });
 
 
-
-
-
     $('.floor_select_btn').find('.select2').on('click', function(){
-        console.log("clicked select form");
-
-        // console.log($('.select2-container--open').is(':visible'));
 
         if($('.select2-container--open').is(':visible') == false){
-
-            console.log("CLICK EVENT");
 
             // return to previous floor
             if(currentBuildingId != undefined){
@@ -492,7 +294,6 @@ $('document').ready(function(){
             }
 
             else { ambiarc.focusOnFloor(mainBldgID, null); }
-
             isFloorSelectorEnabled = false;
         }
 
