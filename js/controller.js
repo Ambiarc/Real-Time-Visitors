@@ -232,16 +232,9 @@ var onFloorSelected = function (event) {
     console.log("Ambiarc received a FloorSelected event with a buildingId of " + floorInfo.buildingId + " and a floorId of " + floorInfo.floorId);
 };
 
-var onEnteredFloorSelector = function (event) {
-    var buildingId = event.detail;
-    currentFloorId = null;
-    if (!isFloorSelectorEnabled) {
-        isFloorSelectorEnabled = true;
-        $("#levels-dropdown").addClass('open');
-        $("#levels-dropdown-button").attr('aria-expanded', true);
-    }
+var onEnteredFloorSelector = function(){
+    isFloorSelectorEnabled = true;
 };
-
 
 $('document').ready(function () {
 
@@ -257,8 +250,8 @@ $('document').ready(function () {
             return;
         }
         var parsedValue = $(this).val().split('::');
-        var currentBuildingId = parsedValue[0];
-        var currentFloorId = parsedValue[1];
+        currentBuildingId = parsedValue[0];
+        currentFloorId = parsedValue[1];
         ambiarc.focusOnFloor(currentBuildingId, currentFloorId);
     });
 
