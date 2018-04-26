@@ -3,7 +3,6 @@ DEFAULT_HOST = "http://localhost:8000";
 
 var ambiarc;
 var directories = {};
-var directories_state = {};
 var currentBuildingId, currentFloorId;
 var previousFloor = null;
 
@@ -16,7 +15,7 @@ var updateDevicesNumbers = function () {
 
     //devices on selected floor
     var devicesOnFLoor = 0;
-    $.each(devices, function (i, device) {
+    devices.forEach(function(device, i){
         if (config.recieverFloors[device.event.receiverDirectory] == currentFloorId) {
             devicesOnFLoor++;
         }
@@ -28,7 +27,7 @@ var updateDevicesNumbers = function () {
 var updateReceiverState = function () {
     var directoriesArray = angular.element(document.getElementById('notmanCtrl')).scope().directories;
 
-    $.each(directoriesArray, function (i, directory) {
+    directoriesArray.forEach(function(directory, i){
         var iconColor = (directory.deviceCount > 0) ? 'dot_green.png' : 'dot_gray.png';
         var img = window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")) + '/img/' + iconColor;
         var mapLabelId = directories[directory.id];
@@ -74,72 +73,22 @@ function fillBuildingsListHardcoded() {
         currentBuildingId = buildings[0];
         currentFloorId = null;
 
-        $.each(buildings, function (id, bldgValue) {
+        buildings.forEach(function(bldgValue, id){
             var floorList = document.createElement('select');
                 floorList.className = 'poi-floor-id poi-details-input form-control';
                 floorList.setAttribute('data-bldgId', bldgValue);
 
-            $.each(config.floorsNameHolders, function (key, value) {
+            for(var key in config.floorsNameHolders){
+                var value = config.floorsNameHolders[key];
                 var listItem = document.createElement('option');
                     listItem.clasName = 'bldg-floor-item';
                     listItem.value = key;
                     listItem.textContent = value;
                 $('#bldg-floor-select').append(listItem);
-            });
+            };
         });
     });
 }
-
-
-// temporary not in use - waiting for possible map update
-var fillBuildingsList = function () {
-
-    var bldgListItem = document.createElement('option');
-        bldgListItem.clasName = 'bldg-list-item';
-        bldgListItem.value = 'Exterior';
-        bldgListItem.textContent = 'Exterior';
-
-    $('#poi-bulding-id').append(bldgListItem);
-    $('#bldg-floor-select').append(bldgListItem);
-
-    ambiarc.getAllBuildings(function (buildings) {
-        mainBldgID = buildings[0];
-        currentBuildingId = buildings[0];
-        currentFloorId = null;
-
-        $.each(buildings, function (id, bldgValue) {
-
-            var floorList = document.createElement('select');
-                floorList.className = 'poi-floor-id poi-details-input form-control';
-                floorList.setAttribute('data-bldgId', bldgValue);
-
-            ambiarc.getAllFloors(bldgValue, function (floors) {
-                $.each(floors, function (i, floorValue) {
-
-                    //poi details panel floor dropdown
-                    var floorItem = document.createElement('option');
-                    floorItem.clasName = 'floor-item';
-                    floorItem.value = floorValue.id;
-                    floorItem.textContent = floorValue.id;
-                    $(floorList).append(floorItem);
-
-                    // main building-floor dropdown
-                    var listItem = document.createElement('option');
-                    listItem.clasName = 'bldg-floor-item';
-                    listItem.value = bldgValue + '::' + floorValue.id;
-                    // listItem.textContent = bldgValue+': '+floorValue.id;
-                    listItem.textContent = config.floorsNameHolders[floorValue.id];
-                    $('#bldg-floor-select').append(listItem);
-                });
-            });
-        });
-        var exteriorListItem = document.createElement('option');
-        exteriorListItem.clasName = 'bldg-list-item';
-        exteriorListItem.value = 'Exterior';
-        exteriorListItem.textContent = 'Exterior';
-        $('#poi-bulding-id').prepend(exteriorListItem);
-    });
-};
 
 /**
  * Periodic updater function, updates device count and the map depending ont the state of the UI
@@ -174,8 +123,8 @@ var onAmbiarcLoaded = function () {
 
     // loading imported labels and associating maplabel ids with directory ids
     ambiarc.loadRemoteMapLabels('map/geodata.json')
-        .then((mapLabels) => {
-            mapLabels.forEach((element, i) => {
+        .then(function(mapLabels){
+            mapLabels.forEach(function(element, i){
                 var mapLabelInfo = element.properties;
                 var directoryId = element.user_properties.directoryId;
                 directories[directoryId] = {};
