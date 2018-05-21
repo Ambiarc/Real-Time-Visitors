@@ -128,7 +128,7 @@ var onAmbiarcLoaded = function () {
                 var mapLabelInfo = element.properties;
                 var directoryId = element.user_properties.directoryId;
                 directories[directoryId] = {};
-                directories[directoryId] = mapLabelInfo.id;
+                directories[directoryId] = mapLabelInfo.mapLabelId;
                 ambiarc.poiList[mapLabelInfo.id] = mapLabelInfo;
             });
         });
