@@ -1,6 +1,6 @@
 # reelyActive & Ambiarc Integration
 
-[Hosted Demo Link](https://s3-us-west-1.amazonaws.com/gk-web-demo/ambiarc/notman/index.html)
+[Hosted Demo Link](https://s3-us-west-1.amazonaws.com/gk-web-demo/ambiarc/notman/1.1/index.html)
 
 This project demonstrates integration of a reelyActive websockets data feed (using [beaver.js](https://github.com/reelyactive/beaver)) into an indoor Ambiarc map. This project maps the Notman House, a technology and startup hub in Montreal, Quebec. The data is real-time and shows active visitors in the building. 
 
