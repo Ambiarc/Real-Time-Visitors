@@ -42,19 +42,12 @@ var updateReceiverState = function () {
         currentLabelInfo.tooltipTitle = tooltipText;
 
         var mapLabelInfo = {
-            mapLabelId: mapLabelId,
-            buildingId: 'B00001',
-            floorId: currentLabelInfo.floorId,
-            showTooltip: true,
-            tooltipTitle: tooltipText,
-            latitude: currentLabelInfo.latitude,
-            longitude: currentLabelInfo.longitude,
-            category: 'Label',
             location: 'URL',
+            collapsedIconLocation: 'URL',
+            collapsedIconPartialPath:  img,
             partialPath: img,
-            label: currentLabelInfo.label,
-            fontSize: 26,
-            showOnCreation: true
+            showTooltip: true,
+            tooltipTitle: tooltipText
         };
         ambiarc.updateMapLabel(mapLabelId, ambiarc.mapLabel.IconWithText, mapLabelInfo);
     });
@@ -112,15 +105,29 @@ var iframeLoaded = function () {
  */
 var onAmbiarcLoaded = function () {
     ambiarc = $("#ambiarcIframe")[0].contentWindow.Ambiarc;
-    ambiarc.poiList = {};
     ambiarc.registerForEvent(ambiarc.eventLabel.CameraMotionCompleted, cameraCompletedHandler);
     ambiarc.registerForEvent(ambiarc.eventLabel.FloorSelected, onFloorSelected);
     ambiarc.registerForEvent(ambiarc.eventLabel.FloorSelectorEnabled, onEnteredFloorSelector);
+    ambiarc.registerForEvent(ambiarc.eventLabel.StartedLoadingMap, mapStartedLoading);
+    ambiarc.registerForEvent(ambiarc.eventLabel.FinishedLoadingMap, mapFinishedLoading);
 
-    $('#bootstrap').removeAttr('hidden');
+    ambiarc.setMapAssetBundleURL(DEFAULT_HOST);
+    ambiarc.loadMap('notman');
+
+
+};
+
+  var mapStartedLoading = function() {
+
+ }
+
+  var mapFinishedLoading = function() {
+     $('#bootstrap').removeAttr('hidden');
     $('#controls-section').fadeIn();
     fillBuildingsListHardcoded();
-
+    ambiarc.poiList = {};
+    ambiarc.setSkyColor("#d6ebf2","#f2ddd6")
+    ambiarc.setLightColor("#A0A0A0","#A0A0A0","#A0A0A0");
     // loading imported labels and associating maplabel ids with directory ids
     ambiarc.loadRemoteMapLabels('map/geodata.json')
         .then(function(mapLabels){
@@ -129,13 +136,16 @@ var onAmbiarcLoaded = function () {
                 var directoryId = element.user_properties.directoryId;
                 directories[directoryId] = {};
                 directories[directoryId] = mapLabelInfo.mapLabelId;
-                ambiarc.poiList[mapLabelInfo.id] = mapLabelInfo;
+                ambiarc.poiList[mapLabelInfo.mapLabelId] = mapLabelInfo;
             });
         });
     setTimeout(function () {
     }, 500);
+    ambiarc.setMapTheme(ambiarc.mapTheme.light);
     setInterval(PeriodicUpdate, DEFAULT_INTERVAL_MILLISECONDS);
-};
+
+    ambiarc.hideLoadingScreen();
+  }
 
 var cameraCompletedHandler = function (event) {
     if (currentFloorId == null) {

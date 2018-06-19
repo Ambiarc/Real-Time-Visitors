@@ -14,8 +14,12 @@
       CameraRotateCompleted: 'CameraRotateCompleted',
       CameraZoomStarted: 'CameraZoomStarted',
       CameraZoomCompleted: 'CameraZoomCompleted',
+      BuildingExitCompleted: 'BuildingExitCompleted',
+      ActionIgnored: 'ActionIgnored',
       AmbiarcAppInitialized: 'AmbiarcAppInitialized',
-      RightMouseDown: 'RightMouseDown'
+      RightMouseDown: 'RightMouseDown',
+      StartedLoadingMap: 'StartedLoadingMap',
+      FinishedLoadingMap: 'FinishedLoadingMap'
     };
     this.mapLabel = {
       Icon: "Icon",
@@ -43,13 +47,6 @@
       });
       gameInstance.SendMessage('Ambiarc', 'CreateMapLabel', json);
     };
-     this.setBuildingLabel = function(buildingID, buildingLabelText) {
-      var json = JSON.stringify({
-        buildingID: buildingID,
-        buildingLabelText: buildingLabelText
-      });
-      gameInstance.SendMessage('Ambiarc', 'SetBuildingLabel', json);
-    };
     this.updateMapLabel = function(mapLabelId, mapLabelType, mapLabelInfo) {
       var json = JSON.stringify({
         mapLabelId: mapLabelId,
@@ -58,6 +55,30 @@
       });
       gameInstance.SendMessage('Ambiarc', 'UpdateMapLabel', json);
     };
+    this.SmoothUpdateMapLabelPosition = function(mapLabelId, latitude, longitude, duration) {
+      var json = JSON.stringify({
+        mapLabelId: mapLabelId,
+        latitude: latitude,
+        longitude: longitude,
+        duration: duration
+      });
+      gameInstance.SendMessage('Ambiarc', 'SmoothUpdateMapLabelPosition', json);
+    };
+
+    this.StopTrackingMapLabel= function() {
+
+      gameInstance.SendMessage('Ambiarc', 'StopTrackingMapLabel');
+    };
+
+     this.TrackMapLabel= function(mapLabelId, height, followSpeed) {
+      var json = JSON.stringify({
+        mapLabelId: mapLabelId,
+        height: height,
+        followSpeed: followSpeed
+      });
+      gameInstance.SendMessage('Ambiarc', 'StartTrackingMapLabel', json);
+    };
+
     this.destroyMapLabel = function(mapLabelId) {
       gameInstance.SendMessage('Ambiarc', 'DestroyMapLabel', mapLabelId);
     };
@@ -126,11 +147,18 @@
       });
       gameInstance.SendMessage('Ambiarc', 'SetColorByCategory', json);
     };
-    this.setSkyColor = function(skyColor, equatorColor, groundColor) {
+    this.setLightColor = function(skyColor, equatorColor, groundColor) {
       var json = JSON.stringify({
         skyColor: skyColor,
         equatorColor: equatorColor,
         groundColor: groundColor
+      });
+      gameInstance.SendMessage('Ambiarc', 'SetLightColor', json);
+    };
+    this.setSkyColor = function(topColor, bottomColor) {
+      var json = JSON.stringify({
+        topColor: topColor,
+        bottomColor: bottomColor
       });
       gameInstance.SendMessage('Ambiarc', 'SetSkyColor', json);
     };
@@ -152,10 +180,12 @@
     };
     this.createHeatmap = function(heatmapPoints) {
       var json = JSON.stringify(heatmapPoints);
+       console.log(json);
       gameInstance.SendMessage('Ambiarc', 'CreateHeatmap', json);
     };
     this.updateHeatmap = function(heatmapPoints) {
       var json = JSON.stringify(heatmapPoints);
+      console.log(json);
       gameInstance.SendMessage('Ambiarc', 'UpdateHeatmap', json);
     };
     this.destroyHeatmap = function() {
@@ -167,13 +197,16 @@
         duration: duration
       });
       gameInstance.SendMessage('Ambiarc', 'TweenRotateCamera', json);
-    }
+    };
     this.zoomCamera = function(normalizedZoomIncrement, duration) {
       var json = JSON.stringify({
         zoomIncrement: normalizedZoomIncrement,
         duration: duration
       });
       gameInstance.SendMessage('Ambiarc', 'TweenZoomCamera', json);
+    };
+    this.exitBuilding = function() {
+      gameInstance.SendMessage('Ambiarc', 'ExitBuilding');
     }
     this.registerForEvent = function(eventLabel, cb) {
       var validLabel = this.eventLabel.hasOwnProperty(eventLabel);
@@ -185,6 +218,19 @@
     this.unregisterEvent = function(eventLabel, cb) {
       document.removeEventListener(eventLabel, cb);
     };
+    this.setMapAssetBundleURL = function(url) {
+      gameInstance.SendMessage('Ambiarc', 'SetMapAssetBundleURL', url);
+    }
+    this.loadMap = function(map) {
+      gameInstance.SendMessage('Ambiarc', 'LoadMap', map);
+    };
+    this.hideLoadingScreen = function() {
+      gameInstance.SendMessage('Ambiarc', 'HideLoadingScreen');
+    };
+    this.loadEmbeddedPOIs = function() {
+      gameInstance.SendMessage('Ambiarc', 'LoadEmbeddedPOIs');
+    }
+
     this.loadRemoteMapLabels = function(url, options) {
       return fetch(url, options)
         .then(res => res.json())

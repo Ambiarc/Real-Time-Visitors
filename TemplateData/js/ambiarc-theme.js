@@ -14,6 +14,15 @@
                 "category": "Room",
                 "colorHex": "#FFFFFF00"
             }, {
+                "category": "Stairs",
+                "colorHex": "#FFFFFF00"
+            }, {
+                "category": "Escalator",
+                "colorHex": "#FFFFFF00"
+            }, {
+                "category": "Ramp",
+                "colorHex": "#FFFFFF00"
+            }, {
                 "category": "Walkway",
                 "colorHex": "#EAE0CA00"
             }, {
@@ -41,6 +50,15 @@
                 "colorHex": "#515F8B00"
             }, {
                 "category": "Room",
+                "colorHex": "#6C738E00"
+            }, {
+                "category": "Stairs",
+                "colorHex": "#6C738E00"
+            }, {
+                "category": "Escalator",
+                "colorHex": "#6C738E00"
+            }, {
+                "category": "Ramp",
                 "colorHex": "#6C738E00"
             }, {
                 "category": "Walkway",

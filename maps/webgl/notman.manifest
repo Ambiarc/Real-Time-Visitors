@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 4088855800
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: eee1467d01375f090c38d39f1b653e81
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/GeneratedMaps/Notman House/notmanhouse_build.unity
+Dependencies: []
