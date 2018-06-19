@@ -110,8 +110,7 @@ var onAmbiarcLoaded = function () {
     ambiarc.registerForEvent(ambiarc.eventLabel.FloorSelectorEnabled, onEnteredFloorSelector);
     ambiarc.registerForEvent(ambiarc.eventLabel.StartedLoadingMap, mapStartedLoading);
     ambiarc.registerForEvent(ambiarc.eventLabel.FinishedLoadingMap, mapFinishedLoading);
-
-    ambiarc.setMapAssetBundleURL(DEFAULT_HOST);
+    ambiarc.setMapAssetBundleURL(location.protocol+'//'+location.hostname+(location.port ? ':'+location.port: '')+window.location.pathname.substring(0, window.location.pathname.lastIndexOf("/")));
     ambiarc.loadMap('notman');
 
 
